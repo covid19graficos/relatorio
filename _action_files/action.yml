@@ -1,6 +1,6 @@
-name: 'fastpages: An easy to use blogging platform with support for Jupyter Notebooks.'
+name: 'Covid-19 no Brasil: Análises, gráficos e projeções a partir de dados históricos.'
 description: Converts Jupyter notebooks and Word docs into Jekyll blog posts.
-author: Hamel Husain
+author: Fernando Wittmann & Vinicius Bastos Gomes
 inputs:
   BOOL_SAVE_MARKDOWN:
     description: Either 'true' or 'false'.  Whether or not to commit converted markdown files from notebooks and word documents into the _posts directory in your repo.  This is useful for debugging.
