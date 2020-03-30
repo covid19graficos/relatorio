@@ -6,11 +6,11 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: fastpages
-description: An easy to use blogging platform with support for Jupyter Notebooks.
+title: Covid-19 Gráficos
+description: Gráficos e Análises no Brasil e Mundo
 github_username: covid19graficos
 # you can comment the below line out if your repo name is not different than your baseurl
-github_repo: "relatorio"
+#github_repo: "relatorio"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
@@ -39,8 +39,8 @@ baseurl: "/relatorio" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   social_links:
-    twitter: fastdotai
-    github: fastai
+    #twitter: fastdotai
+    github: covid19graficos
 
 # Set this to true to get LaTeX math equation support
 use_math: 
@@ -49,10 +49,10 @@ use_math:
 show_description: true
 
 # Set this to true to display image previews on home page, if they exist
-show_image: false
+show_image: true
 
 # Set this to true to display tags on each post
-show_tags: true
+show_tags: false
 
 # Add your Google Analytics ID here if you have one and want to use it
 google_analytics: 
