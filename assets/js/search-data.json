@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Title",
-            "content": "CORONAVIRUS . Comparações entre Brasil e países específicos . Desenvolvido por Vinicius Bastos Gomes e Fernando Wittmann . Gráficos de contaminação . Contaminação Relativa . Mortes . Letalidade .",
-            "url": "https://covid19graficos.github.io/relatorio/2020/03/28/corona-mundo.html",
-            "relUrl": "/2020/03/28/corona-mundo.html",
+            "title": "CORONAVIRUS - Comparações entre Brasil e países específicos",
+            "content": "Gráficos de contaminação . Contaminação Relativa . Mortes . Letalidade .",
+            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/03/28/corona-mundo.html",
+            "relUrl": "/coronavirus/2020/03/28/corona-mundo.html",
             "date": " • Mar 28, 2020"
         }
         
