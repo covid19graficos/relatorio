@@ -18,7 +18,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "This is where you put the contents of your About page. Like all your pages, it’s in Markdown format. . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "content": "Este website foi criado utilizando fastpages no qual permite a conversão automática de arquivos do Jupyter notebook em páginas da web. Temos o objetivo de tornar análises comparativas do Brasil com o resto do mundo de maneira à melhor informar a população. .",
           "url": "https://covid19graficos.github.io/relatorio/about/",
           "relUrl": "/about/",
           "date": ""
