@@ -1,5 +1,5 @@
 name: 'Covid-19 no Brasil: Análises, gráficos e projeções a partir de dados históricos.'
-description: Converts Jupyter notebooks and Word docs into Jekyll blog posts.
+description: Análises dos dados temporais do Covid-19 no Brasil, comparação com outros países do mundo, comparações entre cidades/estados e projeções. Todas atualizadas em tempo real.  
 author: Fernando Wittmann & Vinicius Bastos Gomes
 inputs:
   BOOL_SAVE_MARKDOWN:
