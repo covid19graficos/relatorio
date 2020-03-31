@@ -1,11 +1,33 @@
 {
   
+    
+        "post0": {
+            "title": "Coronavirus Brasil vs Mundo - Gráficos Interativos",
+            "content": "Fonte: https://opendata.ecdc.europa.eu/covid19/casedistribution/csv . Gráficos de contaminação . . . . . . . . . Contaminação Relativa . . . . . Mortes . . . . . . . . . Letalidade . . .",
+            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/03/31/corona-mundo-interativo.html",
+            "relUrl": "/coronavirus/2020/03/31/corona-mundo-interativo.html",
+            "date": " • Mar 31, 2020"
+        }
+        
+    
+  
+    
+        ,"post1": {
+            "title": "Coronavirus Brasil vs Mundo - Gráficos Estáticos",
+            "content": "Fonte: https://opendata.ecdc.europa.eu/covid19/casedistribution/csv . Gráficos de contaminação . Contaminação Relativa . Mortes . Letalidade .",
+            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/03/31/corona-mundo-estatico.html",
+            "relUrl": "/coronavirus/2020/03/31/corona-mundo-estatico.html",
+            "date": " • Mar 31, 2020"
+        }
+        
+    
+  
 
   
   
 
   
-      "page1": {
+      ,"page1": {
           "title": "About Me",
           "content": "Sobre este website . Este website foi criado utilizando fastpages no qual permite a conversão automática de arquivos do Jupyter notebook em páginas da web. Temos o objetivo de tornar análises comparativas do Brasil com o resto do mundo de maneira à melhor informar a população. Sugestões de relatórios podem ser submetidas em nosso repositório. . Desenvolvedores . Vinicius Bastos Gomes Linkedin: https://www.linkedin.com/in/vinicius-gomes-phd-490557163/ | Github: https://github.com/ViniciusBG | . | Fernando Marcos Wittmann LinkedIn: https://www.linkedin.com/in/fernandowittmann/ | GitHub: https://github.com/WittmannF | . | . Fontes . John Hopkins University: https://github.com/CSSEGISandData/COVID-19 | Brasil.io: https://brasil.io/dataset/covid19/boletim | Ministério da Saúde: https://covid.saude.gov.br/ | . As fontes de cada relatório podem também ser conferidas em nossos notebooks. .",
           "url": "https://covid19graficos.github.io/relatorio/about/",
