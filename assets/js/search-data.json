@@ -2,21 +2,10 @@
   
     
         "post0": {
-            "title": "CORONAVIRUS",
-            "content": "Gráficos de contaminação . zoom.head(3) . Países e territórios Casos acumulados Relativa Dias desde o caso número 50 . 0 Brazil | 52 | 0.002484 | 0 | . 1 Brazil | 77 | 0.003679 | 1 | . 2 Brazil | 98 | 0.004682 | 2 | . . . . . . . . . Contaminação Relativa . . . . . Mortes . . . . . . . . . Letalidade . . .",
-            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/03/30/corona-mundo-grafico-interativo.html",
-            "relUrl": "/coronavirus/2020/03/30/corona-mundo-grafico-interativo.html",
-            "date": " • Mar 30, 2020"
-        }
-        
-    
-  
-    
-        ,"post1": {
-            "title": "Coronavirus Brasil vs Mundo - Gráficos Dinâmicos",
-            "content": "Gráficos de contaminação . . . . . . . . . Contaminação Relativa . . . . . Mortes . . . . . . . . . Letalidade . . . . . . . . .",
-            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/03/30/corona-mundo-grafico-dinamico.html",
-            "relUrl": "/coronavirus/2020/03/30/corona-mundo-grafico-dinamico.html",
+            "title": "Coronavirus Brasil vs Mundo - Gráficos Interativos",
+            "content": "Gráficos de contaminação . . . . . . . . . Contaminação Relativa . . . . . Mortes . . . . . . . . . Letalidade . . .",
+            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/03/30/corona-mundo-interativo.html",
+            "relUrl": "/coronavirus/2020/03/30/corona-mundo-interativo.html",
             "date": " • Mar 30, 2020"
         }
         
