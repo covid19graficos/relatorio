@@ -2,17 +2,6 @@
   
     
         "post0": {
-            "title": "Coronavirus Brasil vs Mundo - Gráficos Interativos",
-            "content": "Gráficos de contaminação . . . . . . . . . Contaminação Relativa . . . . . Mortes . . . . . . . . . Letalidade . . .",
-            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/03/31/corona-mundo-interativo.html",
-            "relUrl": "/coronavirus/2020/03/31/corona-mundo-interativo.html",
-            "date": " • Mar 31, 2020"
-        }
-        
-    
-  
-    
-        ,"post1": {
             "title": "Coronavirus Brasil vs Mundo - Gráficos Estáticos",
             "content": "Gráficos de contaminação . Contaminação Relativa . Mortes . Letalidade .",
             "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/03/31/corona-mundo-estatico.html",
@@ -23,7 +12,7 @@
     
   
     
-        ,"post2": {
+        ,"post1": {
             "title": "Coronavirus Brasil - Gráficos estáticos",
             "content": "Gráficos de contaminação . Curvas de contaminação por estado .",
             "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/03/31/corona-brasil-estatico.html",
