@@ -4,9 +4,9 @@
         "post0": {
             "title": "Coronavirus Brasil vs Mundo - Gráficos Interativos",
             "content": "Fonte: https://opendata.ecdc.europa.eu/covid19/casedistribution/csv . Gráficos de contaminação . . . . . . . . . Contaminação Relativa . . . . . Mortes . . . . . . . . . Letalidade . . .",
-            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/03/31/corona-mundo-interativo.html",
-            "relUrl": "/coronavirus/2020/03/31/corona-mundo-interativo.html",
-            "date": " • Mar 31, 2020"
+            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/04/01/corona-mundo-interativo.html",
+            "relUrl": "/coronavirus/2020/04/01/corona-mundo-interativo.html",
+            "date": " • Apr 1, 2020"
         }
         
     
@@ -15,9 +15,9 @@
         ,"post1": {
             "title": "Coronavirus Brasil vs Mundo - Gráficos Estáticos",
             "content": "Fonte: https://opendata.ecdc.europa.eu/covid19/casedistribution/csv . Gráficos de contaminação . Contaminação Relativa . Mortes . Letalidade .",
-            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/03/31/corona-mundo-estatico.html",
-            "relUrl": "/coronavirus/2020/03/31/corona-mundo-estatico.html",
-            "date": " • Mar 31, 2020"
+            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/04/01/corona-mundo-estatico.html",
+            "relUrl": "/coronavirus/2020/04/01/corona-mundo-estatico.html",
+            "date": " • Apr 1, 2020"
         }
         
     
@@ -25,9 +25,31 @@
     
         ,"post2": {
             "title": "Coronavirus Brasil - Gráficos estáticos",
-            "content": "Gráficos de contaminação . Curvas de contaminação por estado .",
-            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/03/31/corona-brasil-estatico.html",
-            "relUrl": "/coronavirus/2020/03/31/corona-brasil-estatico.html",
+            "content": "Gráficos de contaminação . Curvas de contaminação por regiões . #hidecasos_por_cidade.columns . Tabela das 200 cidades com mais casos . Estado Cidade Casos Mortes . date . 2020-03-31 SP | São Paulo | 1885 | 121.0 | . 2020-03-31 CE | Fortaleza | 371 | 6.0 | . 2020-03-31 DF | Brasília | 333 | 3.0 | . 2020-03-31 RS | Porto Alegre | 190 | 2.0 | . 2020-03-31 MG | Belo Horizonte | 163 | 2.0 | . 2020-03-31 AM | Manaus | 159 | 2.0 | . 2020-03-31 BA | Salvador | 132 | 2.0 | . 2020-03-31 PR | Curitiba | 87 | 0.0 | . 2020-03-31 SC | Florianópolis | 58 | 0.0 | . 2020-03-31 PE | Recife | 57 | 4.0 | . 2020-03-31 SP | Importados/Indefinidos | 53 | 1.0 | . 2020-03-31 MA | São Luís | 51 | 1.0 | . 2020-03-31 SP | Santo André | 48 | 1.0 | . 2020-03-31 SP | São Bernardo do Campo | 44 | 1.0 | . 2020-03-31 RN | Natal | 42 | 0.0 | . 2020-03-31 GO | Goiânia | 39 | 0.0 | . 2020-03-31 MS | Campo Grande | 37 | 0.0 | . 2020-03-31 ES | Vila Velha | 35 | 0.0 | . 2020-03-31 AC | Rio Branco | 34 | 0.0 | . 2020-03-31 SP | Osasco | 33 | 2.0 | . 2020-03-31 SP | São Caetano do Sul | 30 | 1.0 | . 2020-03-31 ES | Vitória | 28 | 0.0 | . 2020-03-31 MG | Juiz de Fora | 23 | 0.0 | . 2020-03-31 PA | Belém | 21 | 0.0 | . 2020-03-31 SP | Guarulhos | 21 | 2.0 | . 2020-03-31 MG | Nova Lima | 20 | 0.0 | . 2020-03-31 SP | Barueri | 20 | 0.0 | . 2020-03-31 SC | Blumenau | 19 | 0.0 | . 2020-03-31 SC | Itajaí | 18 | 0.0 | . 2020-03-31 BA | Feira de Santana | 18 | 0.0 | . 2020-03-31 MT | Cuiabá | 18 | 0.0 | . 2020-03-31 SC | Criciúma | 17 | 0.0 | . 2020-03-31 RN | Mossoró | 17 | 1.0 | . 2020-03-31 SP | Santana de Parnaíba | 17 | 0.0 | . 2020-03-31 PI | Teresina | 16 | 2.0 | . 2020-03-31 SE | Aracaju | 16 | 0.0 | . 2020-03-31 SP | Campinas | 15 | 1.0 | . 2020-03-31 RS | Bagé | 15 | 0.0 | . 2020-03-31 SC | Joinville | 14 | 1.0 | . 2020-03-31 ES | Serra | 14 | 0.0 | . 2020-03-31 CE | Aquiraz | 14 | 0.0 | . 2020-03-31 SP | Santos | 14 | 0.0 | . 2020-03-31 RR | Boa Vista | 13 | 0.0 | . 2020-03-31 PB | João Pessoa | 13 | 0.0 | . 2020-03-31 RS | Caxias do Sul | 13 | 0.0 | . 2020-03-31 AL | Maceió | 13 | 1.0 | . 2020-03-31 BA | Lauro de Freitas | 12 | 0.0 | . 2020-03-31 SC | Braço do Norte | 12 | 0.0 | . 2020-03-31 SP | Cotia | 12 | 0.0 | . 2020-03-31 SP | Taboão da Serra | 12 | 1.0 | . 2020-03-31 BA | Porto Seguro | 10 | 0.0 | . 2020-03-31 RN | Parnamirim | 10 | 0.0 | . 2020-03-31 MG | Uberlândia | 10 | 0.0 | . 2020-03-31 SC | São José | 10 | 1.0 | . 2020-03-31 PR | Foz do Iguaçu | 10 | 0.0 | . 2020-03-31 AP | Macapá | 10 | 0.0 | . 2020-03-31 SP | Mogi das Cruzes | 10 | 0.0 | . 2020-03-31 PR | Cascavel | 10 | 1.0 | . 2020-03-31 MG | Divinópolis | 9 | 0.0 | . 2020-03-31 TO | Palmas | 9 | 0.0 | . 2020-03-31 PR | Londrina | 9 | 0.0 | . 2020-03-31 PR | Maringá | 9 | 2.0 | . 2020-03-31 SC | Balneário Camboriú | 9 | 0.0 | . 2020-03-31 SC | Tubarão | 9 | 0.0 | . 2020-03-31 SP | Caieiras | 9 | 1.0 | . 2020-03-31 SP | São José dos Campos | 9 | 0.0 | . 2020-03-31 RS | Canoas | 8 | 0.0 | . 2020-03-31 SC | Importados/Indefinidos | 8 | 0.0 | . 2020-03-31 PR | Cianorte | 7 | 0.0 | . 2020-03-31 SC | Camboriú | 7 | 0.0 | . 2020-03-31 GO | Rio Verde | 7 | 0.0 | . 2020-03-31 SP | Embu das Artes | 7 | 1.0 | . 2020-03-31 RS | Torres | 7 | 0.0 | . 2020-03-31 AC | Acrelândia | 7 | 0.0 | . 2020-03-31 PR | Importados/Indefinidos | 6 | 0.0 | . 2020-03-31 PA | Ananindeua | 6 | 0.0 | . 2020-03-31 SP | Carapicuíba | 6 | 0.0 | . 2020-03-31 SP | São José do Rio Preto | 6 | 0.0 | . 2020-03-31 SP | Itapevi | 6 | 0.0 | . 2020-03-31 SP | Ribeirão Preto | 6 | 1.0 | . 2020-03-31 RO | Porto Velho | 6 | 1.0 | . 2020-03-31 PE | Jaboatão dos Guararapes | 6 | 0.0 | . 2020-03-31 BA | Ilhéus | 6 | 0.0 | . 2020-03-31 SC | Imbituba | 5 | 0.0 | . 2020-03-31 SP | Ferraz de Vasconcelos | 5 | 0.0 | . 2020-03-31 MG | Importados/Indefinidos | 5 | 0.0 | . 2020-03-31 MG | Betim | 5 | 0.0 | . 2020-03-31 SP | Diadema | 5 | 0.0 | . 2020-03-31 MG | Contagem | 5 | 0.0 | . 2020-03-31 PE | Olinda | 5 | 0.0 | . 2020-03-31 SC | Chapecó | 5 | 0.0 | . 2020-03-31 PE | Importados/Indefinidos | 5 | 1.0 | . 2020-03-31 CE | Sobral | 5 | 0.0 | . 2020-03-31 RS | Lajeado | 5 | 0.0 | . 2020-03-31 ES | Cariacica | 5 | 0.0 | . 2020-03-31 SP | Piracicaba | 5 | 0.0 | . 2020-03-31 PR | Pinhais | 4 | 0.0 | . 2020-03-31 BA | Brumado | 4 | 0.0 | . 2020-03-31 AM | Manacapuru | 4 | 0.0 | . 2020-03-31 AM | Itacoatiara | 4 | 0.0 | . 2020-03-31 RS | Sant&#39;Ana do Livramento | 4 | 0.0 | . 2020-03-31 MT | Rondonópolis | 4 | 0.0 | . 2020-03-31 BA | Itabuna | 4 | 0.0 | . 2020-03-31 SC | Porto Belo | 4 | 0.0 | . 2020-03-31 GO | Anápolis | 4 | 0.0 | . 2020-03-31 ES | Linhares | 4 | 0.0 | . 2020-03-31 RS | São Leopoldo | 4 | 0.0 | . 2020-03-31 AL | Importados/Indefinidos | 4 | 0.0 | . 2020-03-31 BA | Itajuípe | 3 | 0.0 | . 2020-03-31 SP | Mauá | 3 | 0.0 | . 2020-03-31 RS | Serafina Corrêa | 3 | 0.0 | . 2020-03-31 RS | Ivoti | 3 | 1.0 | . 2020-03-31 SP | Jundiaí | 3 | 0.0 | . 2020-03-31 RS | Erechim | 3 | 0.0 | . 2020-03-31 SP | Itapecerica da Serra | 3 | 0.0 | . 2020-03-31 BA | Alagoinhas | 3 | 0.0 | . 2020-03-31 AM | Parintins | 3 | 1.0 | . 2020-03-31 SC | Brusque | 3 | 0.0 | . 2020-03-31 PR | São José dos Pinhais | 3 | 0.0 | . 2020-03-31 SC | Gravatal | 3 | 0.0 | . 2020-03-31 PE | São Lourenço da Mata | 3 | 0.0 | . 2020-03-31 SP | Franco da Rocha | 3 | 0.0 | . 2020-03-31 PR | Campo Largo | 3 | 0.0 | . 2020-03-31 RR | Bonfim | 3 | 0.0 | . 2020-03-31 BA | Prado | 3 | 0.0 | . 2020-03-31 SC | Jaraguá do Sul | 3 | 0.0 | . 2020-03-31 SC | Navegantes | 3 | 0.0 | . 2020-03-31 PR | Ponta Grossa | 3 | 0.0 | . 2020-03-31 PR | Campo Mourão | 3 | 0.0 | . 2020-03-31 MG | Uberaba | 3 | 0.0 | . 2020-03-31 MS | Batayporã | 3 | 1.0 | . 2020-03-31 GO | Valparaíso de Goiás | 3 | 0.0 | . 2020-03-31 MG | Sabará | 3 | 0.0 | . 2020-03-31 SP | Sorocaba | 3 | 1.0 | . 2020-03-31 TO | Araguaína | 3 | 0.0 | . 2020-03-31 SP | Vargem Grande Paulista | 2 | 1.0 | . 2020-03-31 GO | Itumbiara | 2 | 0.0 | . 2020-03-31 BA | Camaçari | 2 | 0.0 | . 2020-03-31 PR | Guaíra | 2 | 0.0 | . 2020-03-31 SC | Gaspar | 2 | 0.0 | . 2020-03-31 MG | Governador Valadares | 2 | 0.0 | . 2020-03-31 ES | Guarapari | 2 | 0.0 | . 2020-03-31 GO | Jataí | 2 | 0.0 | . 2020-03-31 SP | Arujá | 2 | 0.0 | . 2020-03-31 RS | Santa Maria | 2 | 0.0 | . 2020-03-31 RS | Capão da Canoa | 2 | 0.0 | . 2020-03-31 SP | Americana | 2 | 0.0 | . 2020-03-31 SE | Propriá | 2 | 0.0 | . 2020-03-31 MS | Nova Andradina | 2 | 0.0 | . 2020-03-31 PR | Paranavaí | 2 | 0.0 | . 2020-03-31 RS | Campo Bom | 2 | 0.0 | . 2020-03-31 MG | Mariana | 2 | 0.0 | . 2020-03-31 PR | Pato Branco | 2 | 0.0 | . 2020-03-31 RS | Bento Gonçalves | 2 | 0.0 | . 2020-03-31 RS | Anta Gorda | 2 | 0.0 | . 2020-03-31 RS | Alvorada | 2 | 0.0 | . 2020-03-31 SP | São Sebastião | 2 | 0.0 | . 2020-03-31 PR | Telêmaco Borba | 2 | 0.0 | . 2020-03-31 PR | Umuarama | 2 | 0.0 | . 2020-03-31 SC | Siderópolis | 2 | 0.0 | . 2020-03-31 SC | Rancho Queimado | 2 | 0.0 | . 2020-03-31 SC | Itapema | 2 | 0.0 | . 2020-03-31 RN | Importados/Indefinidos | 2 | 0.0 | . 2020-03-31 SC | Jaguaruna | 2 | 0.0 | . 2020-03-31 SC | Papanduva | 2 | 0.0 | . 2020-03-31 PR | Almirante Tamandaré | 2 | 0.0 | . 2020-03-31 MG | Lagoa da Prata | 2 | 0.0 | . 2020-03-31 RS | Novo Hamburgo | 2 | 1.0 | . 2020-03-31 PB | Campina Grande | 2 | 0.0 | . 2020-03-31 MG | Sete Lagoas | 2 | 0.0 | . 2020-03-31 PE | Camaragibe | 2 | 0.0 | . 2020-03-31 RS | Pelotas | 2 | 0.0 | . 2020-03-31 PE | Fernando de Noronha | 2 | 0.0 | . 2020-03-31 SP | Mairiporã | 2 | 0.0 | . 2020-03-31 GO | Aparecida de Goiânia | 2 | 0.0 | . 2020-03-31 MG | Poços de Caldas | 2 | 0.0 | . 2020-03-31 MT | Várzea Grande | 2 | 0.0 | . 2020-03-31 BA | Juazeiro | 2 | 0.0 | . 2020-03-31 MG | São João del Rei | 2 | 0.0 | . 2020-03-31 RS | Estância Velha | 2 | 0.0 | . 2020-03-31 PE | Petrolina | 2 | 0.0 | . 2020-03-31 CE | Quixadá | 2 | 0.0 | . 2020-03-31 RS | Rio Grande | 2 | 0.0 | . 2020-03-31 MS | Dourados | 2 | 0.0 | . 2020-03-31 SP | Jandira | 2 | 0.0 | . 2020-03-31 SP | São Vicente | 1 | 0.0 | . 2020-03-31 RS | Sapiranga | 1 | 0.0 | . 2020-03-31 RS | Santo Antônio da Patrulha | 1 | 0.0 | . 2020-03-31 SC | Antônio Carlos | 1 | 0.0 | . 2020-03-31 SP | São Pedro | 1 | 0.0 | . 2020-03-31 SC | Indaial | 1 | 0.0 | . 2020-03-31 RS | Santiago | 1 | 0.0 | . 2020-03-31 SC | Içara | 1 | 0.0 | . 2020-03-31 RS | Santa Rosa | 1 | 0.0 | . 2020-03-31 AL | Porto Real do Colégio | 1 | 0.0 | . 2020-03-31 BA | Dias d&#39;Ávila | 1 | 0.0 | . 2020-03-31 RS | São Domingos do Sul | 1 | 0.0 | . 2020-03-31 SP | Tatuí | 1 | 0.0 | . 2020-03-31 BA | Itagibá | 1 | 0.0 | . 2020-03-31 SP | Vinhedo | 1 | 0.0 | . sns.FacetGrid(sul[sul[&#39;Estado&#39;]==&#39;Paraná&#39;],col=&#39;Casos&#39;,hue=&#39;Estado&#39;) .",
+            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/04/01/corona-brasil-estatico.html",
+            "relUrl": "/coronavirus/2020/04/01/corona-brasil-estatico.html",
+            "date": " • Apr 1, 2020"
+        }
+        
+    
+  
+    
+        ,"post3": {
+            "title": "Coronavirus Brasil vs Mundo - Gráficos Interativos",
+            "content": "Fonte: https://opendata.ecdc.europa.eu/covid19/casedistribution/csv . Gráficos de contaminação . . . . . . . . . Contaminação Relativa . . . . . Mortes . . . . . . . . . Letalidade . . .",
+            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/03/31/corona-mundo-interativo.html",
+            "relUrl": "/coronavirus/2020/03/31/corona-mundo-interativo.html",
+            "date": " • Mar 31, 2020"
+        }
+        
+    
+  
+    
+        ,"post4": {
+            "title": "Coronavirus Brasil vs Mundo - Gráficos Estáticos",
+            "content": "Fonte: https://opendata.ecdc.europa.eu/covid19/casedistribution/csv . Gráficos de contaminação . Contaminação Relativa . Mortes . Letalidade .",
+            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/03/31/corona-mundo-estatico.html",
+            "relUrl": "/coronavirus/2020/03/31/corona-mundo-estatico.html",
             "date": " • Mar 31, 2020"
         }
         
