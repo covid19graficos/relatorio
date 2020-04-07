@@ -33,17 +33,6 @@
         
     
   
-    
-        ,"post3": {
-            "title": "Coronavirus Brasil vs Mundo - Gráficos Interativos",
-            "content": "Fonte: https://opendata.ecdc.europa.eu/covid19/casedistribution/csv . Gráficos de contaminação . Os gráficos a seguir apresentam curvas de contaminação de diversos países. Foram criados com o intuito de comparar estratégias de combate à disseminação do vírus. É importante notar que as curvas de contaminação estão amplamente relacionadas à quantidade de testes que os países tem realizado. A seção contem duas aproximações e duas versões do gáfico completo: nas escalas aritmética e logarítmica. . . . . . Contaminação Relativa . Essa seção conta com gráficos em que o número de casos é dívidido pela população dos países para que se tenha uma ideia da proporção de infectados por país. . . . . . Mortes . Aqui, os gráficos das curvas de mortes em uma aproximação de até 500 e, posteriormente, os completos, nas escalas aritmética e logarítmica. . . . . . . . Letalidade . O gráfco a seguir aponta o número de mortes dividido pelo número de casos confirmados. É importantíssimo notar a grande dependência desses números da quantidade de testes disponíveis. Quanto mais testes realizados, mais confiáveis os dados. . . . O gráfico abaixo representa uma estimativa simples da quantidade de casos atualmente no Brasil. Uma vez que a baixa quantidade de testes tem levado os números a uma subnotificação, o cálculo foi realizado com base no número de óbitos registrados por COVID-19 no Brasil e na taxa de letalidade de países como a Alemanha e a Coréia do Sul, países que tem testado massivamente sua população. Desse modo os números são os seguintes: . Número atual de casos registrados no Brasil hoje: 486 Estimativa de casos no Brasil hoje caso a letalidade seja próxima à da Alemanha: 11130 Estimativa de casos no Brasil hoje caso a letalidade seja próxima à da Coréia do Sul: 32400 . . .",
-            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/04/06/corona-mundo-interativo.html",
-            "relUrl": "/coronavirus/2020/04/06/corona-mundo-interativo.html",
-            "date": " • Apr 6, 2020"
-        }
-        
-    
-  
 
   
   
