@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Coronavirus Brasil vs Mundo - Gráficos Interativos | Covid-19 Gráficos</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Coronavirus Brasil vs Mundo - Gráficos Interativos" />
+<meta name="author" content="Vinicius Bastos Gomes & Fernando Wittmann" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Gráficos e análises com comparações entre Brasil e países específicos" />
+<meta property="og:description" content="Gráficos e análises com comparações entre Brasil e países específicos" />
+<link rel="canonical" href="https://covid19graficos.github.io/relatorio/coronavirus/2020/04/07/corona-mundo-interativo.html" />
+<meta property="og:url" content="https://covid19graficos.github.io/relatorio/coronavirus/2020/04/07/corona-mundo-interativo.html" />
+<meta property="og:site_name" content="Covid-19 Gráficos" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-07T00:00:00-05:00" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Vinicius Bastos Gomes & Fernando Wittmann"},"description":"Gráficos e análises com comparações entre Brasil e países específicos","headline":"Coronavirus Brasil vs Mundo - Gráficos Interativos","dateModified":"2020-04-07T00:00:00-05:00","datePublished":"2020-04-07T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://covid19graficos.github.io/relatorio/coronavirus/2020/04/07/corona-mundo-interativo.html"},"url":"https://covid19graficos.github.io/relatorio/coronavirus/2020/04/07/corona-mundo-interativo.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/relatorio/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://covid19graficos.github.io/relatorio/feed.xml" title="Covid-19 Gráficos" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-162836140-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<link rel="shortcut icon" type="image/x-icon" href="/relatorio/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Coronavirus Brasil vs Mundo - Gráficos Interativos | Covid-19 Gráficos</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Coronavirus Brasil vs Mundo - Gráficos Interativos" />
+<meta name="author" content="Vinicius Bastos Gomes & Fernando Wittmann" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Gráficos e análises com comparações entre Brasil e países específicos" />
+<meta property="og:description" content="Gráficos e análises com comparações entre Brasil e países específicos" />
+<link rel="canonical" href="https://covid19graficos.github.io/relatorio/coronavirus/2020/04/07/corona-mundo-interativo.html" />
+<meta property="og:url" content="https://covid19graficos.github.io/relatorio/coronavirus/2020/04/07/corona-mundo-interativo.html" />
+<meta property="og:site_name" content="Covid-19 Gráficos" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-07T00:00:00-05:00" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Vinicius Bastos Gomes & Fernando Wittmann"},"description":"Gráficos e análises com comparações entre Brasil e países específicos","headline":"Coronavirus Brasil vs Mundo - Gráficos Interativos","dateModified":"2020-04-07T00:00:00-05:00","datePublished":"2020-04-07T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://covid19graficos.github.io/relatorio/coronavirus/2020/04/07/corona-mundo-interativo.html"},"url":"https://covid19graficos.github.io/relatorio/coronavirus/2020/04/07/corona-mundo-interativo.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://covid19graficos.github.io/relatorio/feed.xml" title="Covid-19 Gráficos" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-162836140-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/relatorio/">Covid-19 Gráficos</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/relatorio/about/">About Me</a><a class="page-link" href="/relatorio/search/">Search</a><a class="page-link" href="/relatorio/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Coronavirus Brasil vs Mundo - Gráficos Interativos</h1><p class="page-description">Gráficos e análises com comparações entre Brasil e países específicos</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-07T00:00:00-05:00" itemprop="datePublished">
+        Apr 7, 2020
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Vinicius Bastos Gomes & Fernando Wittmann</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2020-04-07-corona-mundo-interativo.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Fonte:  <a href="https://opendata.ecdc.europa.eu/covid19/casedistribution/csv">https://opendata.ecdc.europa.eu/covid19/casedistribution/csv</a></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center> <h2> Gráficos de contaminação </h2> </center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Os gráficos a seguir apresentam curvas de contaminação de diversos países. Foram criados com o intuito de comparar estratégias de combate à disseminação do vírus. É importante notar que as curvas de contaminação estão amplamente relacionadas à quantidade de testes que os países tem realizado.
+A seção contem duas aproximações e duas versões do gáfico completo: nas escalas aritmética e logarítmica.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script type="text/javascript">if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>
+                <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+            <div id="08821f99-6ca3-4fe3-86e9-7a74b546809a" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <script type="text/javascript">
+                
+                    window.PLOTLYENV=window.PLOTLYENV || {};
+                    
+                if (document.getElementById("08821f99-6ca3-4fe3-86e9-7a74b546809a")) {
+                    Plotly.newPlot(
+                        '08821f99-6ca3-4fe3-86e9-7a74b546809a',
+                        [{"hovertemplate": "color=Brazil<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "Brazil", "line": {"color": "black", "dash": "solid"}, "mode": "lines", "name": "Brazil", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26], "xaxis": "x", "y": [52, 77, 98, 121, 200, 234, 291, 428, 621, 904, 1128, 1546, 1891, 2201, 2433, 2915, 3417, 3904, 4256, 4579, 5717, 6836, 7910, 9056, 10278, 11130, 12056], "yaxis": "y"}, {"hovertemplate": "color=Italy<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "Italy", "line": {"color": "blue", "dash": "solid"}, "mode": "lines", "name": "Italy", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44], "xaxis": "x", "y": [79, 132, 229, 322, 400, 650, 888, 1128, 1689, 2036, 2502, 3089, 3858, 4636, 5883, 7375, 9172, 10149, 12462, 15113, 17660, 21157, 23980, 27980, 31506, 35713, 41035, 47021, 53578, 59138, 63927, 69176, 74386, 80539, 86498, 92472, 97689, 101739, 105792, 110574, 115242, 119827, 124632, 128948, 132547], "yaxis": "y"}, {"hovertemplate": "color=Japan<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "Japan", "line": {"color": "green", "dash": "solid"}, "mode": "lines", "name": "Japan", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51], "xaxis": "x", "y": [52, 59, 59, 66, 84, 93, 105, 132, 144, 144, 164, 186, 210, 230, 239, 254, 254, 268, 317, 349, 408, 455, 488, 514, 568, 619, 675, 737, 780, 814, 824, 829, 873, 950, 1007, 1046, 1089, 1128, 1193, 1268, 1364, 1499, 1693, 1866, 1953, 1953, 2178, 2617, 2935, 3271, 3654, 3817], "yaxis": "y"}, {"hovertemplate": "color=United_Kingdom<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "United_Kingdom", "line": {"color": "darkmagenta", "dash": "solid"}, "mode": "lines", "name": "United_Kingdom", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34], "xaxis": "x", "y": [51, 85, 115, 163, 206, 273, 321, 373, 456, 590, 707, 1140, 1391, 1543, 1950, 2630, 3277, 3983, 5018, 5683, 6650, 8077, 9529, 11658, 14543, 17089, 19522, 22141, 25150, 29474, 33718, 38168, 41903, 47806, 51608], "yaxis": "y"}, {"hovertemplate": "color=United_States_of_America<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "United_States_of_America", "line": {"color": "gray", "dash": "solid"}, "mode": "lines", "name": "United_States_of_America", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42], "xaxis": "x", "y": [53, 53, 59, 60, 66, 69, 89, 103, 125, 159, 233, 338, 433, 554, 754, 1025, 1312, 1663, 2174, 2951, 3774, 4661, 6427, 9415, 14250, 19624, 26747, 35206, 46442, 55231, 69194, 85991, 104686, 124665, 143025, 164620, 189618, 216721, 245540, 277965, 312237, 337635, 368196], "yaxis": "y"}, {"hovertemplate": "color=France<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "France", "line": {"color": "brown", "dash": "solid"}, "mode": "lines", "name": "France", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38], "xaxis": "x", "y": [57, 100, 130, 178, 212, 285, 423, 613, 716, 1126, 1412, 1784, 2281, 2876, 3661, 4499, 5423, 6633, 7730, 9134, 10995, 12612, 14459, 16018, 19856, 22302, 25233, 29155, 32964, 37575, 40174, 44550, 52128, 56989, 59105, 64338, 68605, 70478, 74390], "yaxis": "y"}, {"hovertemplate": "color=South_Korea<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "South_Korea", "line": {"color": "orange", "dash": "solid"}, "mode": "lines", "name": "South_Korea", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47], "xaxis": "x", "y": [80, 155, 345, 601, 762, 892, 1146, 1595, 2022, 2931, 3526, 4212, 4812, 5328, 5766, 6284, 6767, 7134, 7382, 7513, 7755, 7869, 7979, 8086, 8162, 8236, 8320, 8413, 8565, 8652, 8799, 8897, 8961, 9037, 9137, 9241, 9332, 9478, 9583, 9661, 9786, 9786, 9976, 10062, 10156, 10237, 10284, 10331], "yaxis": "y"}, {"hovertemplate": "color=Spain<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "Spain", "line": {"color": "magenta", "dash": "solid"}, "mode": "lines", "name": "Spain", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37], "xaxis": "x", "y": [66, 83, 114, 151, 200, 261, 374, 430, 589, 1204, 1639, 2140, 3004, 4231, 5753, 7753, 9191, 11178, 13716, 17147, 19980, 24926, 28572, 33089, 39673, 47610, 56188, 64059, 72248, 78797, 85195, 94417, 102136, 110238, 117710, 124736, 130759, 135032], "yaxis": "y"}, {"hovertemplate": "color=Argentina<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "Argentina", "line": {"color": "red", "dash": "solid"}, "mode": "lines", "name": "Argentina", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22], "xaxis": "x", "y": [56, 65, 79, 97, 128, 158, 225, 266, 301, 387, 502, 589, 690, 745, 820, 966, 966, 1133, 1133, 1265, 1451, 1554, 1628], "yaxis": "y"}, {"hovertemplate": "color=India<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "India", "line": {"color": "darkblue", "dash": "solid"}, "mode": "lines", "name": "India", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], "xaxis": "x", "y": [50, 73, 75, 83, 90, 93, 125, 137, 165, 191, 231, 320, 439, 492, 562, 649, 724, 873, 979, 1071, 1251, 1397, 1965, 2301, 2902, 3374, 4067, 4421], "yaxis": "y"}, {"hovertemplate": "color=Mexico<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "Mexico", "line": {"color": "lightgreen", "dash": "solid"}, "mode": "lines", "name": "Mexico", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22], "xaxis": "x", "y": [53, 82, 93, 118, 164, 203, 251, 316, 367, 405, 475, 585, 717, 848, 993, 1094, 1215, 1378, 1378, 1688, 1890, 2143, 2439], "yaxis": "y"}, {"hovertemplate": "color=Germany<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "Germany", "line": {"color": "coral", "dash": "solid"}, "mode": "lines", "name": "Germany", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38], "xaxis": "x", "y": [57, 111, 129, 157, 196, 262, 400, 684, 847, 902, 1139, 1296, 1567, 2369, 3062, 3795, 4838, 6012, 7156, 8198, 14138, 18187, 21463, 24774, 29212, 31554, 36508, 42288, 48582, 52547, 57298, 61913, 67366, 73522, 79696, 85778, 91714, 95391, 99225], "yaxis": "y"}, {"hovertemplate": "color=Czechia<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "Czechia", "line": {"color": "lightblue", "dash": "solid"}, "mode": "lines", "name": "Czechia", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], "xaxis": "x", "y": [63, 94, 116, 150, 214, 298, 344, 434, 522, 694, 904, 995, 1165, 1236, 1394, 1654, 2062, 2279, 2663, 2829, 3002, 3308, 3589, 3858, 4190, 4472, 4587, 4822], "yaxis": "y"}, {"hovertemplate": "color=China<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "China", "line": {"color": "black", "dash": "solid"}, "mode": "lines", "name": "China", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93], "xaxis": "x", "y": [59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 63, 80, 216, 235, 386, 526, 623, 882, 1323, 1988, 2775, 4528, 5994, 7734, 9714, 11809, 14399, 17211, 20448, 24320, 28047, 31207, 34625, 37232, 40206, 42696, 44724, 59865, 64021, 66559, 68566, 70618, 72508, 74258, 74652, 75543, 76369, 77016, 77234, 77749, 78159, 78598, 78927, 79355, 79929, 80134, 80261, 80380, 80497, 80667, 80768, 80814, 80859, 80879, 80908, 80932, 80954, 80973, 80995, 81020, 81063, 81086, 81130, 81229, 81281, 81346, 81484, 81553, 81631, 81733, 81827, 81946, 82059, 82157, 82241, 82295, 82395, 82465, 82527, 82575, 82642, 82698], "yaxis": "y"}],
+                        {"legend": {"borderwidth": 0, "font": {"size": 8}, "orientation": "v", "title": {"text": "Pa\u00eds"}, "tracegroupgap": 0, "yanchor": "top"}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "COVID-19 - Casos confirmados - 07-04-2020 \n Escala aritm\u00e9tica"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Dias desde o caso n\u00famero 50"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Casos acumulados"}}},
+                        {"responsive": true}
+                    ).then(function(){
+                            
+var gd = document.getElementById('08821f99-6ca3-4fe3-86e9-7a74b546809a');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })
+                };
+                
+            </script>
+        </div>
+</body>
+</html>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script type="text/javascript">if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>
+                <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+            <div id="2090fd0a-c271-4fd4-9a11-d1844e7f3215" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <script type="text/javascript">
+                
+                    window.PLOTLYENV=window.PLOTLYENV || {};
+                    
+                if (document.getElementById("2090fd0a-c271-4fd4-9a11-d1844e7f3215")) {
+                    Plotly.newPlot(
+                        '2090fd0a-c271-4fd4-9a11-d1844e7f3215',
+                        [{"hovertemplate": "Pa\u00edses e territ\u00f3rios=Brazil<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "Brazil", "line": {"color": "black", "dash": "solid"}, "mode": "lines", "name": "Brazil", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26], "xaxis": "x", "y": [52, 77, 98, 121, 200, 234, 291, 428, 621, 904, 1128, 1546, 1891, 2201, 2433, 2915, 3417, 3904, 4256, 4579, 5717, 6836, 7910, 9056, 10278, 11130, 12056], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Italy<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "Italy", "line": {"color": "blue", "dash": "solid"}, "mode": "lines", "name": "Italy", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44], "xaxis": "x", "y": [79, 132, 229, 322, 400, 650, 888, 1128, 1689, 2036, 2502, 3089, 3858, 4636, 5883, 7375, 9172, 10149, 12462, 15113, 17660, 21157, 23980, 27980, 31506, 35713, 41035, 47021, 53578, 59138, 63927, 69176, 74386, 80539, 86498, 92472, 97689, 101739, 105792, 110574, 115242, 119827, 124632, 128948, 132547], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Japan<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "Japan", "line": {"color": "green", "dash": "solid"}, "mode": "lines", "name": "Japan", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51], "xaxis": "x", "y": [52, 59, 59, 66, 84, 93, 105, 132, 144, 144, 164, 186, 210, 230, 239, 254, 254, 268, 317, 349, 408, 455, 488, 514, 568, 619, 675, 737, 780, 814, 824, 829, 873, 950, 1007, 1046, 1089, 1128, 1193, 1268, 1364, 1499, 1693, 1866, 1953, 1953, 2178, 2617, 2935, 3271, 3654, 3817], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=United_Kingdom<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "United_Kingdom", "line": {"color": "darkmagenta", "dash": "solid"}, "mode": "lines", "name": "United_Kingdom", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34], "xaxis": "x", "y": [51, 85, 115, 163, 206, 273, 321, 373, 456, 590, 707, 1140, 1391, 1543, 1950, 2630, 3277, 3983, 5018, 5683, 6650, 8077, 9529, 11658, 14543, 17089, 19522, 22141, 25150, 29474, 33718, 38168, 41903, 47806, 51608], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=United_States_of_America<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "United_States_of_America", "line": {"color": "gray", "dash": "solid"}, "mode": "lines", "name": "United_States_of_America", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42], "xaxis": "x", "y": [53, 53, 59, 60, 66, 69, 89, 103, 125, 159, 233, 338, 433, 554, 754, 1025, 1312, 1663, 2174, 2951, 3774, 4661, 6427, 9415, 14250, 19624, 26747, 35206, 46442, 55231, 69194, 85991, 104686, 124665, 143025, 164620, 189618, 216721, 245540, 277965, 312237, 337635, 368196], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=France<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "France", "line": {"color": "brown", "dash": "solid"}, "mode": "lines", "name": "France", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38], "xaxis": "x", "y": [57, 100, 130, 178, 212, 285, 423, 613, 716, 1126, 1412, 1784, 2281, 2876, 3661, 4499, 5423, 6633, 7730, 9134, 10995, 12612, 14459, 16018, 19856, 22302, 25233, 29155, 32964, 37575, 40174, 44550, 52128, 56989, 59105, 64338, 68605, 70478, 74390], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=South_Korea<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "South_Korea", "line": {"color": "orange", "dash": "solid"}, "mode": "lines", "name": "South_Korea", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47], "xaxis": "x", "y": [80, 155, 345, 601, 762, 892, 1146, 1595, 2022, 2931, 3526, 4212, 4812, 5328, 5766, 6284, 6767, 7134, 7382, 7513, 7755, 7869, 7979, 8086, 8162, 8236, 8320, 8413, 8565, 8652, 8799, 8897, 8961, 9037, 9137, 9241, 9332, 9478, 9583, 9661, 9786, 9786, 9976, 10062, 10156, 10237, 10284, 10331], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Spain<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "Spain", "line": {"color": "magenta", "dash": "solid"}, "mode": "lines", "name": "Spain", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37], "xaxis": "x", "y": [66, 83, 114, 151, 200, 261, 374, 430, 589, 1204, 1639, 2140, 3004, 4231, 5753, 7753, 9191, 11178, 13716, 17147, 19980, 24926, 28572, 33089, 39673, 47610, 56188, 64059, 72248, 78797, 85195, 94417, 102136, 110238, 117710, 124736, 130759, 135032], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Argentina<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "Argentina", "line": {"color": "red", "dash": "solid"}, "mode": "lines", "name": "Argentina", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22], "xaxis": "x", "y": [56, 65, 79, 97, 128, 158, 225, 266, 301, 387, 502, 589, 690, 745, 820, 966, 966, 1133, 1133, 1265, 1451, 1554, 1628], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=India<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "India", "line": {"color": "darkblue", "dash": "solid"}, "mode": "lines", "name": "India", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], "xaxis": "x", "y": [50, 73, 75, 83, 90, 93, 125, 137, 165, 191, 231, 320, 439, 492, 562, 649, 724, 873, 979, 1071, 1251, 1397, 1965, 2301, 2902, 3374, 4067, 4421], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Mexico<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "Mexico", "line": {"color": "lightgreen", "dash": "solid"}, "mode": "lines", "name": "Mexico", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22], "xaxis": "x", "y": [53, 82, 93, 118, 164, 203, 251, 316, 367, 405, 475, 585, 717, 848, 993, 1094, 1215, 1378, 1378, 1688, 1890, 2143, 2439], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Germany<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "Germany", "line": {"color": "coral", "dash": "solid"}, "mode": "lines", "name": "Germany", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38], "xaxis": "x", "y": [57, 111, 129, 157, 196, 262, 400, 684, 847, 902, 1139, 1296, 1567, 2369, 3062, 3795, 4838, 6012, 7156, 8198, 14138, 18187, 21463, 24774, 29212, 31554, 36508, 42288, 48582, 52547, 57298, 61913, 67366, 73522, 79696, 85778, 91714, 95391, 99225], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Czechia<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "Czechia", "line": {"color": "lightblue", "dash": "solid"}, "mode": "lines", "name": "Czechia", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], "xaxis": "x", "y": [63, 94, 116, 150, 214, 298, 344, 434, 522, 694, 904, 995, 1165, 1236, 1394, 1654, 2062, 2279, 2663, 2829, 3002, 3308, 3589, 3858, 4190, 4472, 4587, 4822], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=China<br>Dias desde o caso n\u00famero 50=%{x}<br>Casos acumulados=%{y}<extra></extra>", "legendgroup": "China", "line": {"color": "black", "dash": "solid"}, "mode": "lines", "name": "China", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93], "xaxis": "x", "y": [59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 59, 63, 80, 216, 235, 386, 526, 623, 882, 1323, 1988, 2775, 4528, 5994, 7734, 9714, 11809, 14399, 17211, 20448, 24320, 28047, 31207, 34625, 37232, 40206, 42696, 44724, 59865, 64021, 66559, 68566, 70618, 72508, 74258, 74652, 75543, 76369, 77016, 77234, 77749, 78159, 78598, 78927, 79355, 79929, 80134, 80261, 80380, 80497, 80667, 80768, 80814, 80859, 80879, 80908, 80932, 80954, 80973, 80995, 81020, 81063, 81086, 81130, 81229, 81281, 81346, 81484, 81553, 81631, 81733, 81827, 81946, 82059, 82157, 82241, 82295, 82395, 82465, 82527, 82575, 82642, 82698], "yaxis": "y"}],
+                        {"legend": {"borderwidth": 0, "font": {"size": 8}, "orientation": "v", "title": {"text": "Pa\u00eds"}, "tracegroupgap": 0, "yanchor": "top"}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "COVID-19 - Casos totais confirmados - 07-04-2020 \n Escala Logar\u00edtmica"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Dias desde o caso n\u00famero 50"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Casos acumulados"}, "type": "log"}},
+                        {"responsive": true}
+                    ).then(function(){
+                            
+var gd = document.getElementById('2090fd0a-c271-4fd4-9a11-d1844e7f3215');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })
+                };
+                
+            </script>
+        </div>
+</body>
+</html>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center> <h2> Contaminação Relativa </h2> </center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Essa seção conta com gráficos em que o número de casos é dívidido pela população dos países para que se tenha uma ideia da proporção de infectados por país.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script type="text/javascript">if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>
+                <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+            <div id="771b1a33-4a62-4f43-a25c-a2ceb41a6d11" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <script type="text/javascript">
+                
+                    window.PLOTLYENV=window.PLOTLYENV || {};
+                    
+                if (document.getElementById("771b1a33-4a62-4f43-a25c-a2ceb41a6d11")) {
+                    Plotly.newPlot(
+                        '771b1a33-4a62-4f43-a25c-a2ceb41a6d11',
+                        [{"hovertemplate": "Pa\u00edses e territ\u00f3rios=Brazil<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "Brazil", "line": {"color": "black", "dash": "solid"}, "mode": "lines", "name": "Brazil", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26], "xaxis": "x", "y": [0.002484472049689441, 0.0036789297658862876, 0.0046822742474916385, 0.005781175346392738, 0.009555661729574774, 0.011180124223602485, 0.013903487816531295, 0.020449116101290014, 0.02967032967032967, 0.04319159101767797, 0.05389393215480172, 0.07386526516961299, 0.09034878165312948, 0.10516005733397038, 0.11624462494027711, 0.13927376970855232, 0.163258480649785, 0.18652651696129957, 0.20334448160535118, 0.21877687529861442, 0.2731485905398949, 0.32661251791686574, 0.3779264214046823, 0.43268036311514574, 0.4910654562828476, 0.5317725752508361, 0.5760152890587673], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Italy<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "Italy", "line": {"color": "blue", "dash": "solid"}, "mode": "lines", "name": "Italy", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44], "xaxis": "x", "y": [0.013038455190625516, 0.021785773229905925, 0.03779501567915498, 0.05314408318204324, 0.06601749463607856, 0.10727842878362766, 0.1465588380920944, 0.18616933487374154, 0.27875887110084174, 0.33602904769763986, 0.4129394289486714, 0.5098201023271167, 0.6367387357649777, 0.7651427628321505, 0.9709523023601254, 1.2171975573526985, 1.5137811520052813, 1.6750288826539033, 2.0567750453870275, 2.4943059910876384, 2.9146723881828684, 3.4918303350387854, 3.9577488034329096, 4.617923749793695, 5.199867965010728, 5.894206964845684, 6.772569730978709, 7.760521538207625, 8.842713319029542, 9.760356494471035, 10.550750949001486, 11.417065522363426, 12.27694338999835, 13.292457501237829, 14.27595312757881, 15.26192440996864, 16.122957583759696, 16.79138471694999, 17.460306981350058, 18.249546129724376, 19.019970292127415, 19.776695824393464, 20.56973097870936, 21.282059745832644, 21.876052153820762], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Japan<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "Japan", "line": {"color": "green", "dash": "solid"}, "mode": "lines", "name": "Japan", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51], "xaxis": "x", "y": [0.004100946372239748, 0.004652996845425868, 0.004652996845425868, 0.0052050473186119875, 0.006624605678233439, 0.007334384858044164, 0.008280757097791799, 0.010410094637223975, 0.011356466876971609, 0.011356466876971609, 0.012933753943217666, 0.014668769716088327, 0.016561514195583597, 0.018138801261829655, 0.018848580441640377, 0.02003154574132492, 0.02003154574132492, 0.02113564668769716, 0.025, 0.02752365930599369, 0.032176656151419555, 0.03588328075709779, 0.038485804416403785, 0.04053627760252366, 0.044794952681388014, 0.04881703470031546, 0.05323343848580442, 0.05812302839116719, 0.061514195583596214, 0.06419558359621451, 0.06498422712933755, 0.06537854889589906, 0.06884858044164038, 0.0749211356466877, 0.07941640378548896, 0.08249211356466878, 0.0858832807570978, 0.08895899053627761, 0.09408517350157729, 0.1, 0.10757097791798108, 0.11821766561514195, 0.1335173501577287, 0.1471608832807571, 0.15402208201892745, 0.15402208201892745, 0.1717665615141956, 0.20638801261829653, 0.23146687697160884, 0.25796529968454257, 0.2881703470031546, 0.30102523659305996], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=United_Kingdom<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "United_Kingdom", "line": {"color": "darkmagenta", "dash": "solid"}, "mode": "lines", "name": "United_Kingdom", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34], "xaxis": "x", "y": [0.007722592368261659, 0.0128709872804361, 0.017413688673531193, 0.024682010902483342, 0.03119321623258631, 0.04133858267716536, 0.04860690490611751, 0.056480920654149, 0.06904906117504543, 0.08933979406420352, 0.10705632949727438, 0.17262265293761356, 0.2106299212598425, 0.23364627498485765, 0.2952755905511811, 0.3982434887946699, 0.49621441550575407, 0.6031193216232587, 0.7598425196850394, 0.8605390672319806, 1.0069654754694124, 1.223046638400969, 1.4429133858267718, 1.7652937613567534, 2.202150211992732, 2.5876741368867355, 2.9560872198667476, 3.352665051483949, 3.808298001211387, 4.46305269533616, 5.105693519079346, 5.7795275590551185, 6.3450938824954575, 7.238946093276802, 7.81465778316172], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=United_States_of_America<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "United_States_of_America", "line": {"color": "gray", "dash": "solid"}, "mode": "lines", "name": "United_States_of_America", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42], "xaxis": "x", "y": [0.0016272643536997236, 0.0016272643536997236, 0.0018114829597789376, 0.00184218606079214, 0.002026404666871354, 0.002118513969910961, 0.0027325759901750076, 0.0031624194043598404, 0.003837887626650292, 0.004881793061099171, 0.007153822536076143, 0.010377648142462389, 0.01329444273871661, 0.017009517961314093, 0.02315013816395456, 0.031470678538532394, 0.040282468529321463, 0.05105925698495548, 0.06674854160270187, 0.09060485108996008, 0.1158735032238256, 0.14310715382253608, 0.1973288302118514, 0.2890696960393, 0.4375191894381332, 0.6025176542830826, 0.8212158428001228, 1.0809333742708014, 1.4259134172551429, 1.6957629720601781, 2.124470371507522, 2.6401903592262816, 3.2141848326680993, 3.827602087810869, 4.391311022413264, 5.054344488793368, 5.8218606079214, 6.654006754682223, 7.538839422781701, 8.534387473134787, 9.586644151059257, 10.36644151059257, 11.304758980657047], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=France<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "France", "line": {"color": "brown", "dash": "solid"}, "mode": "lines", "name": "France", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38], "xaxis": "x", "y": [0.008536768009585144, 0.014976785981728321, 0.01946982177624682, 0.026658679047476413, 0.03175078628126404, 0.04268384004792571, 0.0633518047027108, 0.0918076980679946, 0.10723378762917478, 0.1686386101542609, 0.2114722180620039, 0.26718586191403326, 0.341620488243223, 0.4307323648345065, 0.5483001347910739, 0.6738056013179572, 0.8121911037891268, 0.9934102141680395, 1.1577055563875993, 1.3679796315710648, 1.646697618691029, 1.888872248015576, 2.165493485098098, 2.3989815785532427, 2.9737906245319756, 3.34012280964505, 3.7790924067695073, 4.366481952972892, 4.936947731016923, 5.627527332634417, 6.016774000299535, 6.672158154859967, 7.8070989965553395, 8.535120563127153, 8.852029354500525, 9.635764564924367, 10.274824022764715, 10.555339224202486, 11.141231091807699], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=South_Korea<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "South_Korea", "line": {"color": "orange", "dash": "solid"}, "mode": "lines", "name": "South_Korea", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47], "xaxis": "x", "y": [0.015543034777540314, 0.030114629881484358, 0.0670293374781426, 0.11676704876627161, 0.1480474062560715, 0.1733048377695745, 0.22265397318826502, 0.30988925587721, 0.39285020400233145, 0.5694579366621333, 0.6850592578200894, 0.8183407810374975, 0.93491354186905, 1.035166116184185, 1.1202642315912181, 1.2209053817757918, 1.3147464542451914, 1.3860501262871576, 1.4342335340975325, 1.4596852535457547, 1.5067029337478142, 1.5288517583058092, 1.5502234311249272, 1.5710122401398874, 1.5857781231785506, 1.6001554303477754, 1.6164756168641927, 1.6345443947930833, 1.66407616087041, 1.6809792111909851, 1.7095395375947153, 1.7285797551972022, 1.7410141830192345, 1.7557800660578977, 1.7752088595298232, 1.7954148047406255, 1.8130950068000777, 1.8414610452690887, 1.8618612784146105, 1.8770157373227123, 1.901301729162619, 1.901301729162619, 1.9382164367592774, 1.954925199145133, 1.973188265008743, 1.9889255877210026, 1.9980571206528075, 2.0071886535846124], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Spain<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "Spain", "line": {"color": "magenta", "dash": "solid"}, "mode": "lines", "name": "Spain", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37], "xaxis": "x", "y": [0.014184397163120567, 0.017837954008166772, 0.024500322372662798, 0.032452181388351604, 0.04298302170642596, 0.05609284332688588, 0.08037825059101655, 0.09241349666881582, 0.12658499892542446, 0.2587577906726843, 0.35224586288416077, 0.4599183322587578, 0.645604986030518, 0.9093058241994412, 1.2364066193853427, 1.6662368364496023, 1.975284762518805, 2.402321083172147, 2.9477756286266925, 3.68514936600043, 4.294003868471954, 5.356973995271868, 6.140554480980013, 7.111326026219643, 8.526327100795186, 10.232108317214701, 12.07565011820331, 13.767246937459703, 15.527186761229315, 16.934665807006233, 18.3096926713948, 20.2916398022781, 21.95056952503761, 23.691811734364926, 25.297657425317, 26.807650977863744, 28.10208467655276, 29.020416935310553], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Argentina<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "Argentina", "line": {"color": "red", "dash": "solid"}, "mode": "lines", "name": "Argentina", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22], "xaxis": "x", "y": [0.012649649875762368, 0.01468262932008132, 0.01784504178902191, 0.021911000677659814, 0.02891348543031398, 0.03569008357804382, 0.0508244861079738, 0.060085836909871244, 0.06799186808222273, 0.08741811610571493, 0.11339507567201265, 0.13304721030042918, 0.15586175739778632, 0.16828552066862434, 0.18522701603794894, 0.21820646035690083, 0.21820646035690083, 0.2559295233792636, 0.2559295233792636, 0.2857465552292749, 0.32776146374519993, 0.3510277840524057, 0.36774339281680596], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=India<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "India", "line": {"color": "darkblue", "dash": "solid"}, "mode": "lines", "name": "India", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], "xaxis": "x", "y": [0.0003734129947722181, 0.0005451829723674384, 0.0005601194921583271, 0.000619865571321882, 0.0006721433905899926, 0.0006945481702763256, 0.0009335324869305452, 0.0010231516056758774, 0.0012322628827483196, 0.001426437640029873, 0.0017251680358476476, 0.002389843166542196, 0.0032785660941000746, 0.003674383868558626, 0.004197162061239731, 0.004846900672143391, 0.005407020164301717, 0.006519790888722928, 0.0073114264376400295, 0.007998506348020911, 0.009342793129200897, 0.010433159073935773, 0.01467513069454817, 0.017184466019417477, 0.021672890216579536, 0.025197908887229274, 0.03037341299477222, 0.03301717699775952], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Mexico<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "Mexico", "line": {"color": "lightgreen", "dash": "solid"}, "mode": "lines", "name": "Mexico", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22], "xaxis": "x", "y": [0.01139050075220288, 0.017623038899634645, 0.019987105093488073, 0.025359982806791317, 0.03524607779926929, 0.04362776703202235, 0.05394369224156458, 0.06791317429615303, 0.07887384483129165, 0.08704061895551257, 0.10208467655276166, 0.12572533849129594, 0.15409413281753706, 0.18224801203524607, 0.2134107027724049, 0.23511712873415, 0.2611218568665377, 0.29615301955727485, 0.29615301955727485, 0.3627767032022351, 0.40618955512572535, 0.46056307758435416, 0.5241779497098646], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Germany<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "Germany", "line": {"color": "coral", "dash": "solid"}, "mode": "lines", "name": "Germany", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38], "xaxis": "x", "y": [0.006907416383906932, 0.01345128453708192, 0.015632573921473582, 0.01902569074163839, 0.02375181774115366, 0.031749878817256424, 0.048473097430925836, 0.08288899660688318, 0.10264178380998545, 0.10930683470673776, 0.1380271449345613, 0.1570528356761997, 0.18989335918565195, 0.2870819195346583, 0.37106156083373726, 0.45988851187590885, 0.586282113427048, 0.7285506543868153, 0.8671837130392632, 0.993456131846825, 1.7132816286960737, 2.2039505574406206, 2.600945225399903, 3.0021812893843918, 3.5399903053805137, 3.8238002908385846, 4.424139602520601, 5.12457586039748, 5.887300048473097, 6.367789626757149, 6.943528841492971, 7.502787203102279, 8.163596703829375, 8.909597673291323, 9.657779932137663, 10.394813378574892, 11.11415414444983, 11.559743092583616, 12.024357731459041], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Czechia<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "Czechia", "line": {"color": "lightblue", "dash": "solid"}, "mode": "lines", "name": "Czechia", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], "xaxis": "x", "y": [0.05920496193966733, 0.08833756225918618, 0.10901231087303825, 0.14096419509444602, 0.20110891833474298, 0.28004886758763275, 0.3232778874165962, 0.4078564044732638, 0.49055539892867217, 0.6521943426369703, 0.8495442157691947, 0.935062494126492, 1.0948219152335308, 1.1615449675782352, 1.3100272530777184, 1.554365191241425, 1.937787801898318, 2.14171600413495, 2.5025843435767317, 2.658584719481252, 2.8211634244901798, 3.10873038248285, 3.3728033079597783, 3.6255990978291517, 3.9375998496381923, 4.202612536415751, 4.310685085988159, 4.531528991636125], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=China<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "China", "line": {"color": "black", "dash": "solid"}, "mode": "lines", "name": "China", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93], "xaxis": "x", "y": [0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.00045454545454545455, 0.0005772005772005772, 0.0015584415584415584, 0.0016955266955266956, 0.002784992784992785, 0.0037950937950937953, 0.004494949494949495, 0.006363636363636364, 0.009545454545454546, 0.014343434343434344, 0.02002164502164502, 0.03266955266955267, 0.04324675324675325, 0.0558008658008658, 0.07008658008658009, 0.0852020202020202, 0.10388888888888889, 0.12417748917748918, 0.14753246753246754, 0.17546897546897547, 0.20235930735930735, 0.22515873015873017, 0.24981962481962483, 0.2686291486291486, 0.29008658008658006, 0.3080519480519481, 0.3226839826839827, 0.43192640692640694, 0.4619119769119769, 0.4802236652236652, 0.4947041847041847, 0.5095093795093795, 0.5231457431457431, 0.5357720057720058, 0.5386147186147187, 0.54504329004329, 0.551002886002886, 0.5556709956709956, 0.5572438672438672, 0.560959595959596, 0.5639177489177489, 0.5670851370851371, 0.5694588744588744, 0.5725468975468976, 0.5766883116883117, 0.5781673881673882, 0.5790836940836941, 0.57994227994228, 0.5807864357864357, 0.582012987012987, 0.5827417027417028, 0.5830735930735931, 0.5833982683982684, 0.5835425685425686, 0.5837518037518038, 0.583924963924964, 0.5840836940836941, 0.5842207792207792, 0.5843795093795093, 0.5845598845598846, 0.5848701298701299, 0.585036075036075, 0.5853535353535354, 0.5860678210678211, 0.5864430014430014, 0.5869119769119769, 0.5879076479076479, 0.5884054834054834, 0.5889682539682539, 0.5897041847041847, 0.5903823953823953, 0.5912409812409812, 0.5920562770562771, 0.5927633477633477, 0.5933694083694083, 0.5937590187590187, 0.5944805194805195, 0.59498556998557, 0.5954329004329004, 0.5957792207792207, 0.5962626262626263, 0.5966666666666667], "yaxis": "y"}],
+                        {"legend": {"borderwidth": 0, "font": {"size": 8}, "orientation": "v", "title": {"text": "Pa\u00eds"}, "tracegroupgap": 0, "yanchor": "top"}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "COVID-19 - Contamina\u00e7\u00e3o relativa  07-04-2020 \nCasos a cada 10 mil habitantes - E. Aritm\u00e9tica"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Dias desde o caso n\u00famero 50"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Relativa"}}},
+                        {"responsive": true}
+                    ).then(function(){
+                            
+var gd = document.getElementById('771b1a33-4a62-4f43-a25c-a2ceb41a6d11');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })
+                };
+                
+            </script>
+        </div>
+</body>
+</html>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script type="text/javascript">if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>
+                <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+            <div id="74d5730b-cae2-491e-bcbb-c5961a0bf7a4" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <script type="text/javascript">
+                
+                    window.PLOTLYENV=window.PLOTLYENV || {};
+                    
+                if (document.getElementById("74d5730b-cae2-491e-bcbb-c5961a0bf7a4")) {
+                    Plotly.newPlot(
+                        '74d5730b-cae2-491e-bcbb-c5961a0bf7a4',
+                        [{"hovertemplate": "Pa\u00edses e territ\u00f3rios=Brazil<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "Brazil", "line": {"color": "black", "dash": "solid"}, "mode": "lines", "name": "Brazil", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26], "xaxis": "x", "y": [0.002484472049689441, 0.0036789297658862876, 0.0046822742474916385, 0.005781175346392738, 0.009555661729574774, 0.011180124223602485, 0.013903487816531295, 0.020449116101290014, 0.02967032967032967, 0.04319159101767797, 0.05389393215480172, 0.07386526516961299, 0.09034878165312948, 0.10516005733397038, 0.11624462494027711, 0.13927376970855232, 0.163258480649785, 0.18652651696129957, 0.20334448160535118, 0.21877687529861442, 0.2731485905398949, 0.32661251791686574, 0.3779264214046823, 0.43268036311514574, 0.4910654562828476, 0.5317725752508361, 0.5760152890587673], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Italy<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "Italy", "line": {"color": "blue", "dash": "solid"}, "mode": "lines", "name": "Italy", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44], "xaxis": "x", "y": [0.013038455190625516, 0.021785773229905925, 0.03779501567915498, 0.05314408318204324, 0.06601749463607856, 0.10727842878362766, 0.1465588380920944, 0.18616933487374154, 0.27875887110084174, 0.33602904769763986, 0.4129394289486714, 0.5098201023271167, 0.6367387357649777, 0.7651427628321505, 0.9709523023601254, 1.2171975573526985, 1.5137811520052813, 1.6750288826539033, 2.0567750453870275, 2.4943059910876384, 2.9146723881828684, 3.4918303350387854, 3.9577488034329096, 4.617923749793695, 5.199867965010728, 5.894206964845684, 6.772569730978709, 7.760521538207625, 8.842713319029542, 9.760356494471035, 10.550750949001486, 11.417065522363426, 12.27694338999835, 13.292457501237829, 14.27595312757881, 15.26192440996864, 16.122957583759696, 16.79138471694999, 17.460306981350058, 18.249546129724376, 19.019970292127415, 19.776695824393464, 20.56973097870936, 21.282059745832644, 21.876052153820762], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Japan<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "Japan", "line": {"color": "green", "dash": "solid"}, "mode": "lines", "name": "Japan", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51], "xaxis": "x", "y": [0.004100946372239748, 0.004652996845425868, 0.004652996845425868, 0.0052050473186119875, 0.006624605678233439, 0.007334384858044164, 0.008280757097791799, 0.010410094637223975, 0.011356466876971609, 0.011356466876971609, 0.012933753943217666, 0.014668769716088327, 0.016561514195583597, 0.018138801261829655, 0.018848580441640377, 0.02003154574132492, 0.02003154574132492, 0.02113564668769716, 0.025, 0.02752365930599369, 0.032176656151419555, 0.03588328075709779, 0.038485804416403785, 0.04053627760252366, 0.044794952681388014, 0.04881703470031546, 0.05323343848580442, 0.05812302839116719, 0.061514195583596214, 0.06419558359621451, 0.06498422712933755, 0.06537854889589906, 0.06884858044164038, 0.0749211356466877, 0.07941640378548896, 0.08249211356466878, 0.0858832807570978, 0.08895899053627761, 0.09408517350157729, 0.1, 0.10757097791798108, 0.11821766561514195, 0.1335173501577287, 0.1471608832807571, 0.15402208201892745, 0.15402208201892745, 0.1717665615141956, 0.20638801261829653, 0.23146687697160884, 0.25796529968454257, 0.2881703470031546, 0.30102523659305996], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=United_Kingdom<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "United_Kingdom", "line": {"color": "darkmagenta", "dash": "solid"}, "mode": "lines", "name": "United_Kingdom", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34], "xaxis": "x", "y": [0.007722592368261659, 0.0128709872804361, 0.017413688673531193, 0.024682010902483342, 0.03119321623258631, 0.04133858267716536, 0.04860690490611751, 0.056480920654149, 0.06904906117504543, 0.08933979406420352, 0.10705632949727438, 0.17262265293761356, 0.2106299212598425, 0.23364627498485765, 0.2952755905511811, 0.3982434887946699, 0.49621441550575407, 0.6031193216232587, 0.7598425196850394, 0.8605390672319806, 1.0069654754694124, 1.223046638400969, 1.4429133858267718, 1.7652937613567534, 2.202150211992732, 2.5876741368867355, 2.9560872198667476, 3.352665051483949, 3.808298001211387, 4.46305269533616, 5.105693519079346, 5.7795275590551185, 6.3450938824954575, 7.238946093276802, 7.81465778316172], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=United_States_of_America<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "United_States_of_America", "line": {"color": "gray", "dash": "solid"}, "mode": "lines", "name": "United_States_of_America", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42], "xaxis": "x", "y": [0.0016272643536997236, 0.0016272643536997236, 0.0018114829597789376, 0.00184218606079214, 0.002026404666871354, 0.002118513969910961, 0.0027325759901750076, 0.0031624194043598404, 0.003837887626650292, 0.004881793061099171, 0.007153822536076143, 0.010377648142462389, 0.01329444273871661, 0.017009517961314093, 0.02315013816395456, 0.031470678538532394, 0.040282468529321463, 0.05105925698495548, 0.06674854160270187, 0.09060485108996008, 0.1158735032238256, 0.14310715382253608, 0.1973288302118514, 0.2890696960393, 0.4375191894381332, 0.6025176542830826, 0.8212158428001228, 1.0809333742708014, 1.4259134172551429, 1.6957629720601781, 2.124470371507522, 2.6401903592262816, 3.2141848326680993, 3.827602087810869, 4.391311022413264, 5.054344488793368, 5.8218606079214, 6.654006754682223, 7.538839422781701, 8.534387473134787, 9.586644151059257, 10.36644151059257, 11.304758980657047], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=France<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "France", "line": {"color": "brown", "dash": "solid"}, "mode": "lines", "name": "France", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38], "xaxis": "x", "y": [0.008536768009585144, 0.014976785981728321, 0.01946982177624682, 0.026658679047476413, 0.03175078628126404, 0.04268384004792571, 0.0633518047027108, 0.0918076980679946, 0.10723378762917478, 0.1686386101542609, 0.2114722180620039, 0.26718586191403326, 0.341620488243223, 0.4307323648345065, 0.5483001347910739, 0.6738056013179572, 0.8121911037891268, 0.9934102141680395, 1.1577055563875993, 1.3679796315710648, 1.646697618691029, 1.888872248015576, 2.165493485098098, 2.3989815785532427, 2.9737906245319756, 3.34012280964505, 3.7790924067695073, 4.366481952972892, 4.936947731016923, 5.627527332634417, 6.016774000299535, 6.672158154859967, 7.8070989965553395, 8.535120563127153, 8.852029354500525, 9.635764564924367, 10.274824022764715, 10.555339224202486, 11.141231091807699], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=South_Korea<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "South_Korea", "line": {"color": "orange", "dash": "solid"}, "mode": "lines", "name": "South_Korea", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47], "xaxis": "x", "y": [0.015543034777540314, 0.030114629881484358, 0.0670293374781426, 0.11676704876627161, 0.1480474062560715, 0.1733048377695745, 0.22265397318826502, 0.30988925587721, 0.39285020400233145, 0.5694579366621333, 0.6850592578200894, 0.8183407810374975, 0.93491354186905, 1.035166116184185, 1.1202642315912181, 1.2209053817757918, 1.3147464542451914, 1.3860501262871576, 1.4342335340975325, 1.4596852535457547, 1.5067029337478142, 1.5288517583058092, 1.5502234311249272, 1.5710122401398874, 1.5857781231785506, 1.6001554303477754, 1.6164756168641927, 1.6345443947930833, 1.66407616087041, 1.6809792111909851, 1.7095395375947153, 1.7285797551972022, 1.7410141830192345, 1.7557800660578977, 1.7752088595298232, 1.7954148047406255, 1.8130950068000777, 1.8414610452690887, 1.8618612784146105, 1.8770157373227123, 1.901301729162619, 1.901301729162619, 1.9382164367592774, 1.954925199145133, 1.973188265008743, 1.9889255877210026, 1.9980571206528075, 2.0071886535846124], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Spain<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "Spain", "line": {"color": "magenta", "dash": "solid"}, "mode": "lines", "name": "Spain", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37], "xaxis": "x", "y": [0.014184397163120567, 0.017837954008166772, 0.024500322372662798, 0.032452181388351604, 0.04298302170642596, 0.05609284332688588, 0.08037825059101655, 0.09241349666881582, 0.12658499892542446, 0.2587577906726843, 0.35224586288416077, 0.4599183322587578, 0.645604986030518, 0.9093058241994412, 1.2364066193853427, 1.6662368364496023, 1.975284762518805, 2.402321083172147, 2.9477756286266925, 3.68514936600043, 4.294003868471954, 5.356973995271868, 6.140554480980013, 7.111326026219643, 8.526327100795186, 10.232108317214701, 12.07565011820331, 13.767246937459703, 15.527186761229315, 16.934665807006233, 18.3096926713948, 20.2916398022781, 21.95056952503761, 23.691811734364926, 25.297657425317, 26.807650977863744, 28.10208467655276, 29.020416935310553], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Argentina<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "Argentina", "line": {"color": "red", "dash": "solid"}, "mode": "lines", "name": "Argentina", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22], "xaxis": "x", "y": [0.012649649875762368, 0.01468262932008132, 0.01784504178902191, 0.021911000677659814, 0.02891348543031398, 0.03569008357804382, 0.0508244861079738, 0.060085836909871244, 0.06799186808222273, 0.08741811610571493, 0.11339507567201265, 0.13304721030042918, 0.15586175739778632, 0.16828552066862434, 0.18522701603794894, 0.21820646035690083, 0.21820646035690083, 0.2559295233792636, 0.2559295233792636, 0.2857465552292749, 0.32776146374519993, 0.3510277840524057, 0.36774339281680596], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=India<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "India", "line": {"color": "darkblue", "dash": "solid"}, "mode": "lines", "name": "India", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], "xaxis": "x", "y": [0.0003734129947722181, 0.0005451829723674384, 0.0005601194921583271, 0.000619865571321882, 0.0006721433905899926, 0.0006945481702763256, 0.0009335324869305452, 0.0010231516056758774, 0.0012322628827483196, 0.001426437640029873, 0.0017251680358476476, 0.002389843166542196, 0.0032785660941000746, 0.003674383868558626, 0.004197162061239731, 0.004846900672143391, 0.005407020164301717, 0.006519790888722928, 0.0073114264376400295, 0.007998506348020911, 0.009342793129200897, 0.010433159073935773, 0.01467513069454817, 0.017184466019417477, 0.021672890216579536, 0.025197908887229274, 0.03037341299477222, 0.03301717699775952], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Mexico<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "Mexico", "line": {"color": "lightgreen", "dash": "solid"}, "mode": "lines", "name": "Mexico", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22], "xaxis": "x", "y": [0.01139050075220288, 0.017623038899634645, 0.019987105093488073, 0.025359982806791317, 0.03524607779926929, 0.04362776703202235, 0.05394369224156458, 0.06791317429615303, 0.07887384483129165, 0.08704061895551257, 0.10208467655276166, 0.12572533849129594, 0.15409413281753706, 0.18224801203524607, 0.2134107027724049, 0.23511712873415, 0.2611218568665377, 0.29615301955727485, 0.29615301955727485, 0.3627767032022351, 0.40618955512572535, 0.46056307758435416, 0.5241779497098646], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Germany<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "Germany", "line": {"color": "coral", "dash": "solid"}, "mode": "lines", "name": "Germany", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38], "xaxis": "x", "y": [0.006907416383906932, 0.01345128453708192, 0.015632573921473582, 0.01902569074163839, 0.02375181774115366, 0.031749878817256424, 0.048473097430925836, 0.08288899660688318, 0.10264178380998545, 0.10930683470673776, 0.1380271449345613, 0.1570528356761997, 0.18989335918565195, 0.2870819195346583, 0.37106156083373726, 0.45988851187590885, 0.586282113427048, 0.7285506543868153, 0.8671837130392632, 0.993456131846825, 1.7132816286960737, 2.2039505574406206, 2.600945225399903, 3.0021812893843918, 3.5399903053805137, 3.8238002908385846, 4.424139602520601, 5.12457586039748, 5.887300048473097, 6.367789626757149, 6.943528841492971, 7.502787203102279, 8.163596703829375, 8.909597673291323, 9.657779932137663, 10.394813378574892, 11.11415414444983, 11.559743092583616, 12.024357731459041], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Czechia<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "Czechia", "line": {"color": "lightblue", "dash": "solid"}, "mode": "lines", "name": "Czechia", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27], "xaxis": "x", "y": [0.05920496193966733, 0.08833756225918618, 0.10901231087303825, 0.14096419509444602, 0.20110891833474298, 0.28004886758763275, 0.3232778874165962, 0.4078564044732638, 0.49055539892867217, 0.6521943426369703, 0.8495442157691947, 0.935062494126492, 1.0948219152335308, 1.1615449675782352, 1.3100272530777184, 1.554365191241425, 1.937787801898318, 2.14171600413495, 2.5025843435767317, 2.658584719481252, 2.8211634244901798, 3.10873038248285, 3.3728033079597783, 3.6255990978291517, 3.9375998496381923, 4.202612536415751, 4.310685085988159, 4.531528991636125], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=China<br>Dias desde o caso n\u00famero 50=%{x}<br>Relativa=%{y}<extra></extra>", "legendgroup": "China", "line": {"color": "black", "dash": "solid"}, "mode": "lines", "name": "China", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93], "xaxis": "x", "y": [0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.0004256854256854257, 0.00045454545454545455, 0.0005772005772005772, 0.0015584415584415584, 0.0016955266955266956, 0.002784992784992785, 0.0037950937950937953, 0.004494949494949495, 0.006363636363636364, 0.009545454545454546, 0.014343434343434344, 0.02002164502164502, 0.03266955266955267, 0.04324675324675325, 0.0558008658008658, 0.07008658008658009, 0.0852020202020202, 0.10388888888888889, 0.12417748917748918, 0.14753246753246754, 0.17546897546897547, 0.20235930735930735, 0.22515873015873017, 0.24981962481962483, 0.2686291486291486, 0.29008658008658006, 0.3080519480519481, 0.3226839826839827, 0.43192640692640694, 0.4619119769119769, 0.4802236652236652, 0.4947041847041847, 0.5095093795093795, 0.5231457431457431, 0.5357720057720058, 0.5386147186147187, 0.54504329004329, 0.551002886002886, 0.5556709956709956, 0.5572438672438672, 0.560959595959596, 0.5639177489177489, 0.5670851370851371, 0.5694588744588744, 0.5725468975468976, 0.5766883116883117, 0.5781673881673882, 0.5790836940836941, 0.57994227994228, 0.5807864357864357, 0.582012987012987, 0.5827417027417028, 0.5830735930735931, 0.5833982683982684, 0.5835425685425686, 0.5837518037518038, 0.583924963924964, 0.5840836940836941, 0.5842207792207792, 0.5843795093795093, 0.5845598845598846, 0.5848701298701299, 0.585036075036075, 0.5853535353535354, 0.5860678210678211, 0.5864430014430014, 0.5869119769119769, 0.5879076479076479, 0.5884054834054834, 0.5889682539682539, 0.5897041847041847, 0.5903823953823953, 0.5912409812409812, 0.5920562770562771, 0.5927633477633477, 0.5933694083694083, 0.5937590187590187, 0.5944805194805195, 0.59498556998557, 0.5954329004329004, 0.5957792207792207, 0.5962626262626263, 0.5966666666666667], "yaxis": "y"}],
+                        {"legend": {"borderwidth": 0, "font": {"size": 8}, "orientation": "v", "title": {"text": "Pa\u00eds"}, "tracegroupgap": 0, "yanchor": "top"}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "COVID-19 - Contamina\u00e7\u00e3o relativa  07-04-2020 \nCasos a cada 10 mil habitantes - E. Logar\u00edtmica"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Dias desde o caso n\u00famero 50"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Relativa"}, "type": "log"}},
+                        {"responsive": true}
+                    ).then(function(){
+                            
+var gd = document.getElementById('74d5730b-cae2-491e-bcbb-c5961a0bf7a4');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })
+                };
+                
+            </script>
+        </div>
+</body>
+</html>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center> <h2> Mortes </h2> </center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Aqui, os gráficos das curvas de mortes em uma aproximação de até 500 e, posteriormente, os completos, nas escalas aritmética e logarítmica.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script type="text/javascript">if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>
+                <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+            <div id="74c21dde-1a2c-48b1-be00-7f5cb58d8386" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <script type="text/javascript">
+                
+                    window.PLOTLYENV=window.PLOTLYENV || {};
+                    
+                if (document.getElementById("74c21dde-1a2c-48b1-be00-7f5cb58d8386")) {
+                    Plotly.newPlot(
+                        '74c21dde-1a2c-48b1-be00-7f5cb58d8386',
+                        [{"hovertemplate": "Pa\u00edses e territ\u00f3rios=Brazil<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Brazil", "line": {"color": "black", "dash": "solid"}, "mode": "lines", "name": "Brazil", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], "xaxis": "x", "y": [1, 4, 6, 11, 18, 25, 34, 46, 57, 77, 92, 114, 136, 159, 201, 241, 299, 359, 432, 486], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Italy<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Italy", "line": {"color": "blue", "dash": "solid"}, "mode": "lines", "name": "Italy", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], "xaxis": "x", "y": [2, 2, 6, 11, 12, 17, 21, 29, 35, 52, 80, 107, 148, 197, 233, 366, 464], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Japan<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Japan", "line": {"color": "green", "dash": "solid"}, "mode": "lines", "name": "Japan", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54], "xaxis": "x", "y": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3, 3, 5, 6, 6, 6, 6, 6, 6, 6, 7, 9, 12, 15, 19, 21, 22, 24, 28, 28, 29, 33, 35, 36, 41, 42, 43, 45, 46, 49, 52, 54, 56, 56, 57, 63, 69, 70, 73, 80], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=United_Kingdom<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "United_Kingdom", "line": {"color": "darkmagenta", "dash": "solid"}, "mode": "lines", "name": "United_Kingdom", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], "xaxis": "x", "y": [1, 1, 2, 3, 5, 6, 6, 10, 10, 21, 35, 55, 60, 103, 144, 177, 233, 281, 335, 422, 463], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=United_States_of_America<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "United_States_of_America", "line": {"color": "gray", "dash": "solid"}, "mode": "lines", "name": "United_States_of_America", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22], "xaxis": "x", "y": [1, 2, 6, 9, 11, 12, 14, 17, 21, 26, 28, 30, 40, 47, 57, 69, 85, 108, 150, 150, 260, 340, 471], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=South_Korea<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "South_Korea", "line": {"color": "brown", "dash": "solid"}, "mode": "lines", "name": "South_Korea", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46], "xaxis": "x", "y": [1, 2, 5, 7, 8, 11, 12, 13, 16, 17, 22, 28, 32, 35, 42, 44, 50, 51, 54, 60, 66, 67, 72, 75, 75, 81, 86, 91, 100, 103, 104, 113, 120, 126, 131, 139, 144, 152, 158, 163, 163, 169, 174, 177, 183, 186, 192], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=France<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "France", "line": {"color": "orange", "dash": "solid"}, "mode": "lines", "name": "France", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35], "xaxis": "x", "y": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 4, 4, 7, 9, 10, 19, 30, 33, 48, 61, 79, 91, 127, 148, 175, 244, 372, 450], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=China<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "China", "line": {"color": "magenta", "dash": "solid"}, "mode": "lines", "name": "China", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25], "xaxis": "x", "y": [1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 6, 17, 17, 26, 41, 56, 81, 106, 132, 170, 213, 259, 304, 361, 426, 492], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Spain<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Spain", "line": {"color": "red", "dash": "solid"}, "mode": "lines", "name": "Spain", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], "xaxis": "x", "y": [1, 3, 5, 5, 5, 28, 35, 47, 84, 121, 136, 288, 309, 491], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Argentina<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Argentina", "line": {"color": "darkblue", "dash": "solid"}, "mode": "lines", "name": "Argentina", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28], "xaxis": "x", "y": [1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 4, 4, 4, 6, 8, 12, 17, 19, 20, 24, 24, 31, 34, 37, 43, 46, 53], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=India<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "India", "line": {"color": "lightgreen", "dash": "solid"}, "mode": "lines", "name": "India", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25], "xaxis": "x", "y": [1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 7, 9, 9, 13, 17, 19, 25, 29, 32, 35, 50, 56, 68, 77, 109, 114], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Germany<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Germany", "line": {"color": "coral", "dash": "solid"}, "mode": "lines", "name": "Germany", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], "xaxis": "x", "y": [2, 2, 3, 5, 5, 8, 12, 13, 13, 13, 43, 45, 67, 94, 126, 149, 198, 253, 325, 389, 455], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Czechia<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Czechia", "line": {"color": "lightblue", "dash": "solid"}, "mode": "lines", "name": "Czechia", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "xaxis": "x", "y": [1, 1, 3, 6, 9, 9, 11, 16, 24, 31, 39, 44, 53, 59, 67, 78], "yaxis": "y"}],
+                        {"legend": {"borderwidth": 0, "font": {"size": 8}, "orientation": "v", "title": {"text": "Pa\u00eds"}, "tracegroupgap": 0, "yanchor": "top"}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "COVID-19 - Mortes 07-04-2020 \n Zoom at\u00e9 500"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Dias desde a primeira morte"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Mortes"}}},
+                        {"responsive": true}
+                    ).then(function(){
+                            
+var gd = document.getElementById('74c21dde-1a2c-48b1-be00-7f5cb58d8386');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })
+                };
+                
+            </script>
+        </div>
+</body>
+</html>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script type="text/javascript">if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>
+                <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+            <div id="aec81a4c-c7fb-4985-ab11-b940834edc72" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <script type="text/javascript">
+                
+                    window.PLOTLYENV=window.PLOTLYENV || {};
+                    
+                if (document.getElementById("aec81a4c-c7fb-4985-ab11-b940834edc72")) {
+                    Plotly.newPlot(
+                        'aec81a4c-c7fb-4985-ab11-b940834edc72',
+                        [{"hovertemplate": "Pa\u00edses e territ\u00f3rios=Brazil<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Brazil", "line": {"color": "black", "dash": "solid"}, "mode": "lines", "name": "Brazil", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], "xaxis": "x", "y": [1, 4, 6, 11, 18, 25, 34, 46, 57, 77, 92, 114, 136, 159, 201, 241, 299, 359, 432, 486, 553], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Italy<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Italy", "line": {"color": "blue", "dash": "solid"}, "mode": "lines", "name": "Italy", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44], "xaxis": "x", "y": [2, 2, 6, 11, 12, 17, 21, 29, 35, 52, 80, 107, 148, 197, 233, 366, 464, 631, 827, 1016, 1268, 1441, 1811, 2158, 2505, 2978, 3407, 4032, 4827, 5476, 6077, 6820, 7505, 8165, 9136, 10023, 10781, 11591, 12430, 13157, 13917, 14681, 15362, 15889, 16525], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Japan<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Japan", "line": {"color": "green", "dash": "solid"}, "mode": "lines", "name": "Japan", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54], "xaxis": "x", "y": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3, 3, 5, 6, 6, 6, 6, 6, 6, 6, 7, 9, 12, 15, 19, 21, 22, 24, 28, 28, 29, 33, 35, 36, 41, 42, 43, 45, 46, 49, 52, 54, 56, 56, 57, 63, 69, 70, 73, 80], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=United_Kingdom<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "United_Kingdom", "line": {"color": "darkmagenta", "dash": "solid"}, "mode": "lines", "name": "United_Kingdom", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32], "xaxis": "x", "y": [1, 1, 2, 3, 5, 6, 6, 10, 10, 21, 35, 55, 60, 103, 144, 177, 233, 281, 335, 422, 463, 578, 759, 1019, 1228, 1408, 1789, 2532, 2921, 3605, 4313, 4934, 5373], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=United_States_of_America<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "United_States_of_America", "line": {"color": "gray", "dash": "solid"}, "mode": "lines", "name": "United_States_of_America", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37], "xaxis": "x", "y": [1, 2, 6, 9, 11, 12, 14, 17, 21, 26, 28, 30, 40, 47, 57, 69, 85, 108, 150, 150, 260, 340, 471, 590, 801, 1050, 1296, 1707, 2191, 2509, 3170, 4079, 5138, 6053, 7157, 8501, 9647, 10989], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=South_Korea<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "South_Korea", "line": {"color": "brown", "dash": "solid"}, "mode": "lines", "name": "South_Korea", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46], "xaxis": "x", "y": [1, 2, 5, 7, 8, 11, 12, 13, 16, 17, 22, 28, 32, 35, 42, 44, 50, 51, 54, 60, 66, 67, 72, 75, 75, 81, 86, 91, 100, 103, 104, 113, 120, 126, 131, 139, 144, 152, 158, 163, 163, 169, 174, 177, 183, 186, 192], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=France<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "France", "line": {"color": "orange", "dash": "solid"}, "mode": "lines", "name": "France", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52], "xaxis": "x", "y": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 4, 4, 7, 9, 10, 19, 30, 33, 48, 61, 79, 91, 127, 148, 175, 244, 372, 450, 562, 674, 860, 1100, 1331, 1696, 1995, 2314, 2606, 3024, 3523, 4032, 4503, 6507, 7560, 8078, 8911], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=China<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "China", "line": {"color": "magenta", "dash": "solid"}, "mode": "lines", "name": "China", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87], "xaxis": "x", "y": [1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 6, 17, 17, 26, 41, 56, 81, 106, 132, 170, 213, 259, 304, 361, 426, 492, 564, 637, 723, 812, 909, 1017, 1114, 1368, 1381, 1524, 1666, 1771, 1869, 2008, 2120, 2238, 2347, 2445, 2595, 2665, 2717, 2746, 2790, 2837, 2872, 2914, 2946, 2983, 3014, 3044, 3072, 3099, 3122, 3139, 3161, 3172, 3179, 3194, 3203, 3216, 3225, 3241, 3249, 3253, 3259, 3265, 3274, 3281, 3285, 3291, 3296, 3299, 3304, 3306, 3309, 3310, 3316, 3326, 3330, 3333, 3335, 3335], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Spain<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Spain", "line": {"color": "red", "dash": "solid"}, "mode": "lines", "name": "Spain", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33], "xaxis": "x", "y": [1, 3, 5, 5, 5, 28, 35, 47, 84, 121, 136, 288, 309, 491, 598, 767, 1002, 1326, 1720, 2182, 2696, 3434, 4089, 4858, 5690, 6528, 7340, 8189, 9053, 10003, 10935, 11744, 12418, 13055], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Argentina<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Argentina", "line": {"color": "darkblue", "dash": "solid"}, "mode": "lines", "name": "Argentina", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28], "xaxis": "x", "y": [1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 4, 4, 4, 6, 8, 12, 17, 19, 20, 24, 24, 31, 34, 37, 43, 46, 53], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=India<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "India", "line": {"color": "lightgreen", "dash": "solid"}, "mode": "lines", "name": "India", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25], "xaxis": "x", "y": [1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 7, 9, 9, 13, 17, 19, 25, 29, 32, 35, 50, 56, 68, 77, 109, 114], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Germany<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Germany", "line": {"color": "coral", "dash": "solid"}, "mode": "lines", "name": "Germany", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28], "xaxis": "x", "y": [2, 2, 3, 5, 5, 8, 12, 13, 13, 13, 43, 45, 67, 94, 126, 149, 198, 253, 325, 389, 455, 583, 732, 872, 1017, 1158, 1342, 1434, 1607], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Czechia<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Czechia", "line": {"color": "lightblue", "dash": "solid"}, "mode": "lines", "name": "Czechia", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "xaxis": "x", "y": [1, 1, 3, 6, 9, 9, 11, 16, 24, 31, 39, 44, 53, 59, 67, 78], "yaxis": "y"}],
+                        {"legend": {"borderwidth": 0, "font": {"size": 8}, "orientation": "v", "title": {"text": "Pa\u00eds"}, "tracegroupgap": 0, "yanchor": "top"}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "COVID-19 - Mortes  - 07-04-2020 \n Escala Aritm\u00e9tica"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Dias desde a primeira morte"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Mortes"}}},
+                        {"responsive": true}
+                    ).then(function(){
+                            
+var gd = document.getElementById('aec81a4c-c7fb-4985-ab11-b940834edc72');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })
+                };
+                
+            </script>
+        </div>
+</body>
+</html>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script type="text/javascript">if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>
+                <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+            <div id="a4109816-5fb0-400c-95f3-9c5b8f8a6bac" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <script type="text/javascript">
+                
+                    window.PLOTLYENV=window.PLOTLYENV || {};
+                    
+                if (document.getElementById("a4109816-5fb0-400c-95f3-9c5b8f8a6bac")) {
+                    Plotly.newPlot(
+                        'a4109816-5fb0-400c-95f3-9c5b8f8a6bac',
+                        [{"hovertemplate": "Pa\u00edses e territ\u00f3rios=Brazil<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Brazil", "line": {"color": "black", "dash": "solid"}, "mode": "lines", "name": "Brazil", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], "xaxis": "x", "y": [1, 4, 6, 11, 18, 25, 34, 46, 57, 77, 92, 114, 136, 159, 201, 241, 299, 359, 432, 486, 553], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Italy<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Italy", "line": {"color": "blue", "dash": "solid"}, "mode": "lines", "name": "Italy", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44], "xaxis": "x", "y": [2, 2, 6, 11, 12, 17, 21, 29, 35, 52, 80, 107, 148, 197, 233, 366, 464, 631, 827, 1016, 1268, 1441, 1811, 2158, 2505, 2978, 3407, 4032, 4827, 5476, 6077, 6820, 7505, 8165, 9136, 10023, 10781, 11591, 12430, 13157, 13917, 14681, 15362, 15889, 16525], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Japan<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Japan", "line": {"color": "green", "dash": "solid"}, "mode": "lines", "name": "Japan", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54], "xaxis": "x", "y": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3, 3, 5, 6, 6, 6, 6, 6, 6, 6, 7, 9, 12, 15, 19, 21, 22, 24, 28, 28, 29, 33, 35, 36, 41, 42, 43, 45, 46, 49, 52, 54, 56, 56, 57, 63, 69, 70, 73, 80], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=United_Kingdom<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "United_Kingdom", "line": {"color": "darkmagenta", "dash": "solid"}, "mode": "lines", "name": "United_Kingdom", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32], "xaxis": "x", "y": [1, 1, 2, 3, 5, 6, 6, 10, 10, 21, 35, 55, 60, 103, 144, 177, 233, 281, 335, 422, 463, 578, 759, 1019, 1228, 1408, 1789, 2532, 2921, 3605, 4313, 4934, 5373], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=United_States_of_America<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "United_States_of_America", "line": {"color": "gray", "dash": "solid"}, "mode": "lines", "name": "United_States_of_America", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37], "xaxis": "x", "y": [1, 2, 6, 9, 11, 12, 14, 17, 21, 26, 28, 30, 40, 47, 57, 69, 85, 108, 150, 150, 260, 340, 471, 590, 801, 1050, 1296, 1707, 2191, 2509, 3170, 4079, 5138, 6053, 7157, 8501, 9647, 10989], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=South_Korea<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "South_Korea", "line": {"color": "brown", "dash": "solid"}, "mode": "lines", "name": "South_Korea", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46], "xaxis": "x", "y": [1, 2, 5, 7, 8, 11, 12, 13, 16, 17, 22, 28, 32, 35, 42, 44, 50, 51, 54, 60, 66, 67, 72, 75, 75, 81, 86, 91, 100, 103, 104, 113, 120, 126, 131, 139, 144, 152, 158, 163, 163, 169, 174, 177, 183, 186, 192], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=France<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "France", "line": {"color": "orange", "dash": "solid"}, "mode": "lines", "name": "France", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52], "xaxis": "x", "y": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 4, 4, 7, 9, 10, 19, 30, 33, 48, 61, 79, 91, 127, 148, 175, 244, 372, 450, 562, 674, 860, 1100, 1331, 1696, 1995, 2314, 2606, 3024, 3523, 4032, 4503, 6507, 7560, 8078, 8911], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=China<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "China", "line": {"color": "magenta", "dash": "solid"}, "mode": "lines", "name": "China", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87], "xaxis": "x", "y": [1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 6, 17, 17, 26, 41, 56, 81, 106, 132, 170, 213, 259, 304, 361, 426, 492, 564, 637, 723, 812, 909, 1017, 1114, 1368, 1381, 1524, 1666, 1771, 1869, 2008, 2120, 2238, 2347, 2445, 2595, 2665, 2717, 2746, 2790, 2837, 2872, 2914, 2946, 2983, 3014, 3044, 3072, 3099, 3122, 3139, 3161, 3172, 3179, 3194, 3203, 3216, 3225, 3241, 3249, 3253, 3259, 3265, 3274, 3281, 3285, 3291, 3296, 3299, 3304, 3306, 3309, 3310, 3316, 3326, 3330, 3333, 3335, 3335], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Spain<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Spain", "line": {"color": "red", "dash": "solid"}, "mode": "lines", "name": "Spain", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33], "xaxis": "x", "y": [1, 3, 5, 5, 5, 28, 35, 47, 84, 121, 136, 288, 309, 491, 598, 767, 1002, 1326, 1720, 2182, 2696, 3434, 4089, 4858, 5690, 6528, 7340, 8189, 9053, 10003, 10935, 11744, 12418, 13055], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Argentina<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Argentina", "line": {"color": "darkblue", "dash": "solid"}, "mode": "lines", "name": "Argentina", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28], "xaxis": "x", "y": [1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 4, 4, 4, 6, 8, 12, 17, 19, 20, 24, 24, 31, 34, 37, 43, 46, 53], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=India<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "India", "line": {"color": "lightgreen", "dash": "solid"}, "mode": "lines", "name": "India", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25], "xaxis": "x", "y": [1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 7, 9, 9, 13, 17, 19, 25, 29, 32, 35, 50, 56, 68, 77, 109, 114], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Germany<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Germany", "line": {"color": "coral", "dash": "solid"}, "mode": "lines", "name": "Germany", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28], "xaxis": "x", "y": [2, 2, 3, 5, 5, 8, 12, 13, 13, 13, 43, 45, 67, 94, 126, 149, 198, 253, 325, 389, 455, 583, 732, 872, 1017, 1158, 1342, 1434, 1607], "yaxis": "y"}, {"hovertemplate": "Pa\u00edses e territ\u00f3rios=Czechia<br>Dias desde a primeira morte=%{x}<br>Mortes=%{y}<extra></extra>", "legendgroup": "Czechia", "line": {"color": "lightblue", "dash": "solid"}, "mode": "lines", "name": "Czechia", "showlegend": true, "type": "scatter", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "xaxis": "x", "y": [1, 1, 3, 6, 9, 9, 11, 16, 24, 31, 39, 44, 53, 59, 67, 78], "yaxis": "y"}],
+                        {"legend": {"borderwidth": 0, "font": {"size": 8}, "orientation": "v", "title": {"text": "Pa\u00eds"}, "tracegroupgap": 0, "yanchor": "top"}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "COVID-19 - Mortes  07-04-2020 \n Escala Logar\u00edtmica"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Dias desde a primeira morte"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Mortes"}, "type": "log"}},
+                        {"responsive": true}
+                    ).then(function(){
+                            
+var gd = document.getElementById('a4109816-5fb0-400c-95f3-9c5b8f8a6bac');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })
+                };
+                
+            </script>
+        </div>
+</body>
+</html>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<center> <h2> Letalidade </h2> </center>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>O gráfco a seguir aponta o número de mortes dividido pelo número de casos confirmados. É importantíssimo notar a grande dependência desses números da quantidade de testes disponíveis. Quanto mais testes realizados, mais confiáveis os dados.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">czech_Republic</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>countriesAndTerritories</th>
+      <th>Cumulativo</th>
+      <th>Relativo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Czechia</td>
+      <td>63</td>
+      <td>0.059205</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Czechia</td>
+      <td>94</td>
+      <td>0.088338</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Czechia</td>
+      <td>116</td>
+      <td>0.109012</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Czechia</td>
+      <td>150</td>
+      <td>0.140964</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Czechia</td>
+      <td>214</td>
+      <td>0.201109</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Czechia</td>
+      <td>298</td>
+      <td>0.280049</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Czechia</td>
+      <td>344</td>
+      <td>0.323278</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Czechia</td>
+      <td>434</td>
+      <td>0.407856</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Czechia</td>
+      <td>522</td>
+      <td>0.490555</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Czechia</td>
+      <td>694</td>
+      <td>0.652194</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Czechia</td>
+      <td>904</td>
+      <td>0.849544</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Czechia</td>
+      <td>995</td>
+      <td>0.935062</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Czechia</td>
+      <td>1165</td>
+      <td>1.094822</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Czechia</td>
+      <td>1236</td>
+      <td>1.161545</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Czechia</td>
+      <td>1394</td>
+      <td>1.310027</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Czechia</td>
+      <td>1654</td>
+      <td>1.554365</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Czechia</td>
+      <td>2062</td>
+      <td>1.937788</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Czechia</td>
+      <td>2279</td>
+      <td>2.141716</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Czechia</td>
+      <td>2663</td>
+      <td>2.502584</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Czechia</td>
+      <td>2829</td>
+      <td>2.658585</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Czechia</td>
+      <td>3002</td>
+      <td>2.821163</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Czechia</td>
+      <td>3308</td>
+      <td>3.108730</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Czechia</td>
+      <td>3589</td>
+      <td>3.372803</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Czechia</td>
+      <td>3858</td>
+      <td>3.625599</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Czechia</td>
+      <td>4190</td>
+      <td>3.937600</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Czechia</td>
+      <td>4472</td>
+      <td>4.202613</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Czechia</td>
+      <td>4587</td>
+      <td>4.310685</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Czechia</td>
+      <td>4822</td>
+      <td>4.531529</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script type="text/javascript">if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>
+                <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+            <div id="62e486c6-19b5-4f49-bf2f-8b8a742abccd" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <script type="text/javascript">
+                
+                    window.PLOTLYENV=window.PLOTLYENV || {};
+                    
+                if (document.getElementById("62e486c6-19b5-4f49-bf2f-8b8a742abccd")) {
+                    Plotly.newPlot(
+                        '62e486c6-19b5-4f49-bf2f-8b8a742abccd',
+                        [{"alignmentgroup": "True", "hovertemplate": "Pa\u00edses=%{y}<br>Letalidade %=%{x}<extra></extra>", "legendgroup": "Brasil", "marker": {"color": "#3366CC"}, "name": "Brasil", "offsetgroup": "Brasil", "orientation": "h", "showlegend": true, "textposition": "auto", "type": "bar", "x": [4.59], "xaxis": "x", "y": ["Brasil"], "yaxis": "y"}, {"alignmentgroup": "True", "hovertemplate": "Pa\u00edses=%{y}<br>Letalidade %=%{x}<extra></extra>", "legendgroup": "EUA", "marker": {"color": "#DC3912"}, "name": "EUA", "offsetgroup": "EUA", "orientation": "h", "showlegend": true, "textposition": "auto", "type": "bar", "x": [2.98], "xaxis": "x", "y": ["EUA"], "yaxis": "y"}, {"alignmentgroup": "True", "hovertemplate": "Pa\u00edses=%{y}<br>Letalidade %=%{x}<extra></extra>", "legendgroup": "Reino Unido", "marker": {"color": "#FF9900"}, "name": "Reino Unido", "offsetgroup": "Reino Unido", "orientation": "h", "showlegend": true, "textposition": "auto", "type": "bar", "x": [10.41], "xaxis": "x", "y": ["Reino Unido"], "yaxis": "y"}, {"alignmentgroup": "True", "hovertemplate": "Pa\u00edses=%{y}<br>Letalidade %=%{x}<extra></extra>", "legendgroup": "It\u00e1lia", "marker": {"color": "#109618"}, "name": "It\u00e1lia", "offsetgroup": "It\u00e1lia", "orientation": "h", "showlegend": true, "textposition": "auto", "type": "bar", "x": [12.47], "xaxis": "x", "y": ["It\u00e1lia"], "yaxis": "y"}, {"alignmentgroup": "True", "hovertemplate": "Pa\u00edses=%{y}<br>Letalidade %=%{x}<extra></extra>", "legendgroup": "Espanha", "marker": {"color": "#990099"}, "name": "Espanha", "offsetgroup": "Espanha", "orientation": "h", "showlegend": true, "textposition": "auto", "type": "bar", "x": [9.67], "xaxis": "x", "y": ["Espanha"], "yaxis": "y"}, {"alignmentgroup": "True", "hovertemplate": "Pa\u00edses=%{y}<br>Letalidade %=%{x}<extra></extra>", "legendgroup": "Fran\u00e7a", "marker": {"color": "#0099C6"}, "name": "Fran\u00e7a", "offsetgroup": "Fran\u00e7a", "orientation": "h", "showlegend": true, "textposition": "auto", "type": "bar", "x": [11.98], "xaxis": "x", "y": ["Fran\u00e7a"], "yaxis": "y"}, {"alignmentgroup": "True", "hovertemplate": "Pa\u00edses=%{y}<br>Letalidade %=%{x}<extra></extra>", "legendgroup": "Jap\u00e3o", "marker": {"color": "#DD4477"}, "name": "Jap\u00e3o", "offsetgroup": "Jap\u00e3o", "orientation": "h", "showlegend": true, "textposition": "auto", "type": "bar", "x": [2.1], "xaxis": "x", "y": ["Jap\u00e3o"], "yaxis": "y"}, {"alignmentgroup": "True", "hovertemplate": "Pa\u00edses=%{y}<br>Letalidade %=%{x}<extra></extra>", "legendgroup": "Argentina", "marker": {"color": "#66AA00"}, "name": "Argentina", "offsetgroup": "Argentina", "orientation": "h", "showlegend": true, "textposition": "auto", "type": "bar", "x": [3.26], "xaxis": "x", "y": ["Argentina"], "yaxis": "y"}, {"alignmentgroup": "True", "hovertemplate": "Pa\u00edses=%{y}<br>Letalidade %=%{x}<extra></extra>", "legendgroup": "\u00cdndia", "marker": {"color": "#B82E2E"}, "name": "\u00cdndia", "offsetgroup": "\u00cdndia", "orientation": "h", "showlegend": true, "textposition": "auto", "type": "bar", "x": [2.58], "xaxis": "x", "y": ["\u00cdndia"], "yaxis": "y"}, {"alignmentgroup": "True", "hovertemplate": "Pa\u00edses=%{y}<br>Letalidade %=%{x}<extra></extra>", "legendgroup": "Alemanha", "marker": {"color": "#316395"}, "name": "Alemanha", "offsetgroup": "Alemanha", "orientation": "h", "showlegend": true, "textposition": "auto", "type": "bar", "x": [1.62], "xaxis": "x", "y": ["Alemanha"], "yaxis": "y"}, {"alignmentgroup": "True", "hovertemplate": "Pa\u00edses=%{y}<br>Letalidade %=%{x}<extra></extra>", "legendgroup": "China", "marker": {"color": "#3366CC"}, "name": "China", "offsetgroup": "China", "orientation": "h", "showlegend": true, "textposition": "auto", "type": "bar", "x": [4.03], "xaxis": "x", "y": ["China"], "yaxis": "y"}, {"alignmentgroup": "True", "hovertemplate": "Pa\u00edses=%{y}<br>Letalidade %=%{x}<extra></extra>", "legendgroup": "Rep\u00fablica Tcheca", "marker": {"color": "#DC3912"}, "name": "Rep\u00fablica Tcheca", "offsetgroup": "Rep\u00fablica Tcheca", "orientation": "h", "showlegend": true, "textposition": "auto", "type": "bar", "x": [1.62], "xaxis": "x", "y": ["Rep\u00fablica Tcheca"], "yaxis": "y"}],
+                        {"barmode": "relative", "legend": {"borderwidth": 0, "font": {"size": 8}, "orientation": "v", "title": {"text": "Pa\u00eds"}, "tracegroupgap": 0, "yanchor": "top"}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "Letalidade - 07-04-2020"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Letalidade %"}}, "yaxis": {"anchor": "x", "categoryarray": ["Rep\u00fablica Tcheca", "China", "Alemanha", "\u00cdndia", "Argentina", "Jap\u00e3o", "Fran\u00e7a", "Espanha", "It\u00e1lia", "Reino Unido", "EUA", "Brasil"], "categoryorder": "array", "domain": [0.0, 1.0], "title": {"text": "Pa\u00edses"}, "type": "category"}},
+                        {"responsive": true}
+                    ).then(function(){
+                            
+var gd = document.getElementById('62e486c6-19b5-4f49-bf2f-8b8a742abccd');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })
+                };
+                
+            </script>
+        </div>
+</body>
+</html>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>O gráfico abaixo representa uma estimativa simples da quantidade de casos atualmente no Brasil. Uma vez que a baixa quantidade de testes tem levado os números a uma subnotificação, o cálculo foi realizado com base no número de óbitos registrados por COVID-19 no Brasil e na taxa de letalidade de países como a Alemanha e a Coréia do Sul, países que tem testado massivamente sua população. Desse modo os números são os seguintes:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Número atual de casos registrados no Brasil hoje: 553
+Estimativa de casos no Brasil hoje caso a letalidade seja próxima à da Alemanha: 12056
+Estimativa de casos no Brasil hoje caso a letalidade seja próxima à da Coréia do Sul: 34135
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG"></script><script type="text/javascript">if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}</script>
+                <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+            <div id="f3c31649-0804-4390-b5da-2f1c3b76e012" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <script type="text/javascript">
+                
+                    window.PLOTLYENV=window.PLOTLYENV || {};
+                    
+                if (document.getElementById("f3c31649-0804-4390-b5da-2f1c3b76e012")) {
+                    Plotly.newPlot(
+                        'f3c31649-0804-4390-b5da-2f1c3b76e012',
+                        [{"line": {"color": "firebrick", "width": 4}, "name": "Brasil registrado", "type": "scatter", "x": ["2020-03-17T00:00:00", "2020-03-18T00:00:00", "2020-03-19T00:00:00", "2020-03-20T00:00:00", "2020-03-21T00:00:00", "2020-03-22T00:00:00", "2020-03-23T00:00:00", "2020-03-24T00:00:00", "2020-03-25T00:00:00", "2020-03-26T00:00:00", "2020-03-27T00:00:00", "2020-03-28T00:00:00", "2020-03-29T00:00:00", "2020-03-30T00:00:00", "2020-03-31T00:00:00", "2020-04-01T00:00:00", "2020-04-02T00:00:00", "2020-04-03T00:00:00", "2020-04-04T00:00:00", "2020-04-05T00:00:00", "2020-04-06T00:00:00", "2020-04-07T00:00:00"], "y": [234, 291, 428, 621, 904, 1128, 1546, 1891, 2201, 2433, 2915, 3417, 3904, 4256, 4579, 5717, 6836, 7910, 9056, 10278, 11130, 12056]}, {"line": {"color": "blue", "width": 2}, "name": "Proje\u00e7\u00e3o Alemanha", "type": "scatter", "x": ["2020-03-17T00:00:00", "2020-03-18T00:00:00", "2020-03-19T00:00:00", "2020-03-20T00:00:00", "2020-03-21T00:00:00", "2020-03-22T00:00:00", "2020-03-23T00:00:00", "2020-03-24T00:00:00", "2020-03-25T00:00:00", "2020-03-26T00:00:00", "2020-03-27T00:00:00", "2020-03-28T00:00:00", "2020-03-29T00:00:00", "2020-03-30T00:00:00", "2020-03-31T00:00:00", "2020-04-01T00:00:00", "2020-04-02T00:00:00", "2020-04-03T00:00:00", "2020-04-04T00:00:00", "2020-04-05T00:00:00", "2020-04-06T00:00:00", "2020-04-07T00:00:00"], "y": [0.0, 61.72839506172839, 246.91358024691357, 370.3703703703703, 679.0123456790124, 1111.111111111111, 1543.2098765432097, 2098.7654320987654, 2839.506172839506, 3518.5185185185182, 4753.086419753086, 5679.012345679012, 7037.0370370370365, 8395.061728395061, 9814.814814814814, 12407.407407407407, 14876.543209876541, 18456.79012345679, 22160.493827160495, 26666.666666666664, 30000.0, 34135.8024691358]}],
+                        {"template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "Proje\u00e7\u00e3o de casos no Brasil baseados nas taxas de letalidade da Alemanha"}, "xaxis": {"title": {"text": "Data"}}, "yaxis": {"title": {"text": "Proje\u00e7\u00e3o"}}},
+                        {"responsive": true}
+                    ).then(function(){
+                            
+var gd = document.getElementById('f3c31649-0804-4390-b5da-2f1c3b76e012');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })
+                };
+                
+            </script>
+        </div>
+</body>
+</html>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/relatorio/coronavirus/2020/04/07/corona-mundo-interativo.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/relatorio/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/relatorio/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/relatorio/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Gráficos, Análises e Projeções do Covid-19 no Brasil</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/covid19graficos" title="covid19graficos"><svg class="svg-icon grey"><use xlink:href="/relatorio/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
