@@ -15,7 +15,7 @@ for old_fname, new_fname in zip(jupyter_fnames, jupyter_new_fnames):
     os.system(f'git add {new_fname}')
 
 # delete previous version
-os.system(f'git rm -f {befyest}-projecao-brasil.ipynb')
+os.system(f'git rm -f {befyest}-projecao-*')
 
 # Commit changes
 os.system(f'git commit -m "update projection"')
