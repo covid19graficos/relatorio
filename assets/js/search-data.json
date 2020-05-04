@@ -44,17 +44,6 @@
         
     
   
-    
-        ,"post4": {
-            "title": "Mundo - Comparações entre Países",
-            "content": "Fonte: https://opendata.ecdc.europa.eu/covid19/casedistribution/csv . Gráficos de contaminação . Os gráficos a seguir apresentam curvas de contaminação de diversos países. Foram criados com o intuito de comparar estratégias de combate à disseminação do vírus. É importante notar que as curvas de contaminação estão amplamente relacionadas à quantidade de testes que os países tem realizado. . . . . . Contaminação Relativa . Essa seção conta com gráficos em que o número de casos é dívidido pela população dos países para que se tenha uma ideia da proporção de infectados por país. . . . . . Óbitos . Os gráficos a seguir apresentam os óbitos contabilizados por COVID-19, nas escalas aritmética e logarítmica. . . . . . Óbitos (relativo) . . . . . Letalidade . O gráfco a seguir aponta o número de mortes dividido pelo número de casos confirmados. É importantíssimo notar a grande dependência desses números da quantidade de testes disponíveis. Quanto mais testes realizados, mais confiáveis os dados. . . . O gráfico a seguir apresenta a curva de letalidade dos países. Novamente reiteramos que: mais do que de fato apresentar uma flutuação da letalidade do vírus, que muito provavelmente não varia tão abruptamente, esses gráficos demonstram, por exemplo, um aumento na quantidade de testes (quando a taxa de letalidade cai), uma mudança na forma de contabilizar os óbitos, entre outros. . . .",
-            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/05/03/corona-mundo-interativo.html",
-            "relUrl": "/coronavirus/2020/05/03/corona-mundo-interativo.html",
-            "date": " • May 3, 2020"
-        }
-        
-    
-  
 
   
   
