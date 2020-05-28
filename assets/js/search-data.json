@@ -55,17 +55,6 @@
         
     
   
-    
-        ,"post5": {
-            "title": "Brasil - Comparações entre Regiões e estados",
-            "content": "Fonte (estados):https://covid.saude.gov.br/ (cidades) https://data.brasil.io/dataset/covid19/caso.csv.gz . Gráficos de contaminação . Casos novos no país. . Os gráficos a seguir apresentam curvas de contaminação dos estados brasileiros. É importante notar que as curvas de contaminação estão amplamente relacionadas à quantidade de testes que os países tem realizado. Até o momento estarão apenas na escala aritmética. . . . Essa seção conta com gráficos em que o número de casos é dívidido pela população dos estados para que se tenha uma ideia da proporção de infectados por país. . . . O gráfico a seguir é um comparativo de casos totais por estado no Brasil. . . . O gráfico a seguir é um comparativo a proporção de habitantes infectados por estado no Brasil. . . . Curvas de contaminação por regiões . Comparações entre as regiões do Brasil. Primeiramente uma soma dos casos por regiões e, posteriormente, uma comparação entre os estados das regiões. . . . . . . . . . . . . . . . . . . . . . . . Óbitos . Comparações entre as regiões do Brasil. Primeiramente uma soma dos casos por regiões e, posteriormente, uma comparação entre os estados das regiões. . . . Óbitos por regiões . . . . . . . . . . . . . Letalidade por estado brasileiro . O gráfco a seguir aponta o número de mortes dividido pelo número de casos confirmados. É importantíssimo notar a grande dependência desses números da quantidade de testes disponíveis. Quanto mais testes realizados, mais confiáveis os dados. . . . O gráfico a seguir apresenta a curva de letalidade dos estados. Novamente reiteramos que: mais do que de fato apresentar uma flutuação da letalidade do vírus, que muito provavelmente não varia tão abruptamente, esses gráficos demonstram, por exemplo, um aumento na quantidade de testes (quando a taxa de letalidade cai), uma mudança na forma de contabilizar os óbitos, entre outros. . . .",
-            "url": "https://covid19graficos.github.io/relatorio/coronavirus/2020/05/27/corona-brasil-estados.html",
-            "relUrl": "/coronavirus/2020/05/27/corona-brasil-estados.html",
-            "date": " • May 27, 2020"
-        }
-        
-    
-  
 
   
   
